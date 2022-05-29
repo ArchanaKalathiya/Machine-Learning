@@ -25,8 +25,8 @@ Since both the features have different sclaes , there is a chance that higher ma
 we scale our data to make all the features contribute equally to the result
 Types - 
     - Standardization
-
-<img src="Standardization.png" height="300" width="400">
+<p align="center">
+<img src="Standardization.png" height="300" width="400"></p>
     - Normalization 
-    
-<img src="Normalization.png" height="300" width="400">
+<p align="center">
+<img src="Normalization.png" height="300" width="600"></p>
