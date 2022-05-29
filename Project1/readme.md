@@ -26,10 +26,10 @@ we scale our data to make all the features contribute equally to the result
 Types - 
     - Standardization
         <p align="center">
-        <img src="Standardization.png" height="120" width="400"></p>
+        <img src="Standardization.png" height="120" width="200"></p>
 
     - Normalization
         
         <p align="center">
-        <img src="Normalization.png" height="120" width="600"></p>
+        <img src="Normalization.png" height="120" width="400"></p>
 
