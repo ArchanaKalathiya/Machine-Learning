@@ -35,3 +35,26 @@ print(X_train)
 from sklearn.linear_model import LogisticRegression
 model = LogisticRegression()
 model.fit(X_train, Y_train)
+
+#Prediction for all test data
+Y_pred = model.predict(X_test)
+print(np.concatenate((Y_pred.reshape(len(Y_pred),1),Y_test.reshape(len(Y_test),1)),1))
+
+from sklearn.metrics import confusion_matrix, accuracy_score
+cm = confusion_matrix(Y_test,Y_pred)
+print("Confusion matrix :  ")
+print(cm)
+
+print("Accuracy of the Model : {0}%".format(accuracy_score(Y_test,Y_pred)*100))
+
+#Predicting , Whether new customer with Age and salary will buy or not 
+
+age = int(input("Enter New customer's Age: "))
+sal = int(input("Enter New customer's salary : "))
+newCust = [[age,sal]]
+result = model.predict(sc.transform(newCust))
+print(result)
+if result == 1:
+    print("Customer will Buy :) ")
+else : 
+    print("Customer won't buy :( ")
