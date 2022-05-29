@@ -18,4 +18,15 @@ pip install pandas
 3. Load and Summarize dataset - Load dataset from the directory & summarize the details such as no. of rows and columns & content 
 4. Segregating dataset into X and Y 
 5. Splitting dataset to train and Test 
-6. 
+6. Feature Scaling -
+-  Problem - 
+Since both the features have different sclaes , there is a chance that higher magnitude . This will imaoct the performance of the machine learning algorithm and obivously , we do not want our algorithm to be biassed toward one feature.
+- Solution - 
+we scale our data to make all the features contribute equally to the result
+Types - 
+    - Standardization
+
+<img src="Standardization.png" height="300" width="400">
+    - Normalization 
+    
+<img src="Normalization.png" height="300" width="400">
