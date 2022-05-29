@@ -1,4 +1,4 @@
-# Advertisment Sale prediction from an existing customer
+# Sale Prediction from existing customer - Logistic Regression
 
 ## Problem Statement
 
@@ -8,6 +8,10 @@ Given the dataset of the customer predict whether customer is going to buy the p
 
 ```
 pip install pandas
+```
+
+```
+pip install numpy
 ```
 
 ## Approach
@@ -27,8 +31,17 @@ pip install pandas
   - Standardization
         <p align="center">
         <img src="Standardization.png" height="120" width="200"></p>
+             
+  Here the values are centered around mean with a unit standard deviation.This means that the mean of the attribute becomes zero and the resultant distribution has a unit standard deviation 
 
   - Normalization
 
     <p align="center">
     <img src="Normalization.png" height="120" width="400"></p>
+Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1 . It is also known as the Min-Max Scaling
+
+
+7. Algorithm - Logistic Regression - Uses one or more independent variables (X) to determine dependent variable (Y). 
+8. Training - Training our model for Pre-Processed Dataset 
+9. Validation - Obtaining the accuracy of the model 
+10. Prediction - Observing how our model is classifying our new model 
