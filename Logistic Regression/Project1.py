@@ -30,7 +30,7 @@ print(X_train)
 
 # model.fit(X_train,Y_train)
 # result = model.predict(sc.transform(newCust)
-
+ 
 #Training using logistic algorithm
 from sklearn.linear_model import LogisticRegression
 model = LogisticRegression()
