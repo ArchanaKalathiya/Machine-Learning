@@ -1,0 +1,4067 @@
+Sr. No.,Code,Algorithm
+1,"num1 = 15 num2 = 12 sum = num1 + num2 print(""Sum of {0} and {1} is {2}"" .format(num1, num2, sum))","Step 1: Read A , B Step 2: Let Sum= A+B Step 3: Print Sum Step 4: Stop."
+2,"num1 = 15 num2 = 12 prod = num1 * num2 print(""Prod of {0} and {1} is {2}"" .format(num1, num2, prod))","Step 1: Read A , B Step 2: Let Product=A*B Step 3: Print Product Step 4: Stop."
+3,x = 5 y = 10 temp = x x = y y = temp print('The value of x after swapping: {}'.format(x)),"[Initialize the variables] A = 2 B = 3 2. [Peform the operations] TEMP = A A = B B = TEMP 3. [Print the result] Print A, B 4. [Finished] Stop"
+4,"x = 5 y = 10 x, y = y, x print(""x ="", x) print(""y ="", y)","1. [Initialize the variables] A = 2 B = 3 2. x,y=y,x 3. [Print the result] Print A, B 4. [Finished] Stop"
+5,"a=[] n=int(input(""Enter number of elements:"")) for i in range(1,n+1): b=int(input(""Enter element:"")) a.append(b) a.sort() print(""Largest element is:"",a[n-1])",1. Take in the number of elements and store it in a variable. 2. Take in the elements of the list one by one. 3. Sort the list in ascending order. 4. Print the last element of the list. 5. Exit.
+6,"def maximum(a, b): if a >= b: return a else: return b a = 2 b = 4 print(maximum(a, b))","Ask the user to enter two integer values. Read the two integer values in num1 and num2 (integer variables). Check if num1 is greater than num2. If true, then print ?num1? as the greatest number. If false, then print ?num2? as the greatest number."
+7,"def factorial(n): return 1 if (n==1 or n==0) else n * factorial(n - 1) num = 5 print(""Factorial of"",num,""is"",factorial(num))","Start program Ask the user to enter an integer to find the factorial Read the integer and assign it to a variable From the value of the integer up to 1, multiply each digit and update the final value The final value at the end of all the multiplication till 1 is the factorial End program"
+8,"def simple_interest(p,t,r): print('The principal is', p) print('The time period is', t) print('The rate of interest is',r) si = (p * t * r)/100 print('The Simple Interest is', si) return si simple_interest(8, 6, 8)","Store the values of the Principal, Time, and the Rate in the particular data types. Now use this formula (P * R * T) / 100 to calculate the simple interest. The P is the principal, R is the rate of interest, and the T is the total period of time. The calculated value from the above expression is the Simple interest."
+9,"def compound_interest(principal, rate, time): Amount = principal * (pow((1 + rate / 100), time)) CI = Amount - principal print(""Compound interest is"", CI) compound_interest(10000, 10.25, 5)","Step 1: Start  Step 2: Read 3 number for p, n, r Step 3: Calculate C.I = p ? (1 + r/100)n ? p Step 4: Print ?The compound Interest = C.l?  Step 5: Stop"
+10,def is_armstrong(num): num_str = str(num) n = len(num_str) sum = 0 for digit in num_str: sum += int(digit)**n if sum == num: return True else: return False num=153 print(is_armstrong(num)),"Step 1: Start Step 2: Declare Variable sum, temp, num Step 3: Read num from User Step 4: Initialize Variable sum=0 and temp=num Step 5: Repeat Until num>=0 5.1 sum=sum + cube of last digit i.e [(num%10)*(num%10)*(num%10)] 5.2 num=num/10 Step 6: IF sum==temp Print ""Armstrong Number"" ELSE Print ""Not Armstrong Number"" Step 7: Stop"
+11,"def findArea(r): PI = 3.142 return PI * (r*r); print(""Area is %.6f"" % findArea(5));","STEP 1: Take radius as input from the user using std input. STEP 2: Calculate the area of circle using, area = (3.14)*r*r STEP 3: Print the area to the screen using the std output."
+12,"num = 11 if num > 1: for i in range(2, int(num/2)+1): between if (num % i) == 0: print(num, ""is not a prime number"") break else: print(num, ""is a prime number"") else: print(num, ""is not a prime number"")","STEP 1: Take num as input. STEP 2: Initialize a variable temp to 0. STEP 3: Iterate a ?for? loop from 2 to num/2. STEP 4: If num is divisible by loop iterator, then increment temp. STEP 5: If the temp is equal to 0, Return ?Num IS PRIME? Else, Return ?Num IS NOT PRIME?.   "
+13,"c = 'g' print(""The ASCII value of '"" + c + ""' is"", ord(c))",1. assign character to char 2. print ASCII value of  c is ord(c))
+14,"def squaresum(n): sm = 0 for i in range(1, n+1): sm = sm + (i * i) return sm n = 4 print(squaresum(n))","Step 1: Read N. Step 2 : Let ctr = 0, sum = 0. Step 3: Read Num. Step 4 : ctr = ctr + 1. Step 5: Compute the square of the number i.e., = sqr (Num * Num). Step 6 : sum = sum * sqr. Step 7: If ctr is less than N then repeat steps 3 to 6.  Step 8: Print sum. Step 9: End."
+15,"def _sum(arr): sum = 0 for i in arr: sum = sum + i return(sum) if __name__ == ""__main__"": arr = [12, 3, 4, 15] n = len(arr) ans = _sum(arr print('Sum of the array is ', ans)","STEP 1: START STEP 2: INITIALIZE arr[] = {1, 2, 3, 4, 5} STEP 3: SET sum = 0 STEP 4: length= sizeof(arr)/sizeof(arr[0]) STEP 5: SET i=0. REPEAT STEP 6 and STEP 7 UNTIL i<length STEP 6: sum = sum + arr[i] STEP 7: i=i+1. STEP 8: PRINT ""Sum of all the elements of an array:"" by assigning sum. STEP 9: RETURN 0. STEP 10: END."
+16,"def largest(arr, n): for i in range(1, n): if arr[i] > max: max = arr[i] return max arr = [10, 324, 45, 90, 9808] n = len(arr) Ans = largest(arr, n) print(""Largest in given array "", Ans)","STEP 1: START STEP 2: INITIALIZE arr[] = {25, 11, 7, 75, 56} STEP 3: max = arr[0] STEP 4: REPEAT STEP 5 for(i=0; i< arr.length; i++) STEP 5: if(arr[i]>max) max=arr[i] STEP 6: PRINT ""Largest element in given array:"" STEP 7: PRINT max STEP 8: END"
+17,"def rotateArray(arr, n, d): temp = [] i = 0 while (i < d): temp.append(arr[i]) i = i + 1 i = 0 while (d < n): arr[i] = arr[d] i = i + 1 d = d + 1 arr[:] = arr[: i] + temp return arr arr = [1, 2, 3, 4, 5, 6, 7] print(""Array after left rotation is: "", end=' ') print(rotateArray(arr, len(arr), 2))","1) Store d elements in a temp array temp[] = [1, 2] 2) Shift rest of the arr[] arr[] = [3, 4, 5, 6, 7, 6, 7] 3) Store back the d elements arr[] = [3, 4, 5, 6, 7, 1, 2]"
+18,"def isPalindrome(s): return s == s[::-1] s = ""malayalam"" ans = isPalindrome(s) if ans: print(""Yes"") else: print(""No"")",Step 1. Start Step 2. Read the string from the user Step 3. Calculate the length of the string Step 4. Initialize rev = ? ?   [empty string] Step 5. Initialize i = length - 1  Step 6. Repeat until i>=0: 6.1: rev = rev + Character at position ?i? of the string 6.2: i = i ? 1 Step 7. If string = rev: 7.1: Print ?Given string is palindrome? Step 8. Else: 8.1: Print ?Given string is not palindrome? Step 9. Stop
+19,"string = ""geeks quiz practice code"" s = string.split()[::-1] l = [] for i in s: l.append(i) print("" "".join(l))","1. Convert the string into an array of strings, which will store the words. 2. Initialize the 2 pointers left and right to 0 and string.length() ? 1 respectively. 3. While the left pointer does not exceed the right pointer, swap the elements at the left and right pointer, move the left pointer forward and the right pointer backward by 1 place. 4. return the final calculated string."
+20,"X = [[1,2,3],[4 ,5,6],[7 ,8,9]] Y = [[9,8,7], [6,5,4], [3,2,1]] result = [[0,0,0], [0,0,0], [0,0,0]] for i in range(len(X)): for j in range(len(X[0])): result[i][j] = X[i][j] + Y[i][j] for r in result: print(r)","Step 1: Start Step 2: Declare matrix mat1[row][col]; and matrix mat2[row][col]; and matrix sum[row][col]; row= no. of rows, col= no. of columns Step 3: Read row, col, mat1[][] and mat2[][] Step 4: Declare variable i=0, j=0 Step 5: Repeat until i < row 5.1: Repeat until j < col sum[i][j]=mat1[i][j] + mat2[i][j] Set j=j+1 5.2: Set i=i+1 Step 6: sum is the required matrix after addition Step 7: Stop"
+21,"# Function for nth fibonacci
+# number - Space Optimisation
+# Taking 1st two fibonacci numbers as 0 and 1
+
+def fibonacci(n):
+	a = 0
+	b = 1
+	
+	# Check is n is less
+	# than 0
+	if n < 0:
+		print(""Incorrect input"")
+		
+	# Check is n is equal
+	# to 0
+	elif n == 0:
+		return 0
+	
+	# Check if n is equal to 1
+	elif n == 1:
+		return b
+	else:
+		for i in range(1, n):
+			c = a + b
+			a = b
+			b = c
+		return b
+
+# Driver Program
+print(fibonacci(9))","class Solution {
+    public int fib(int n) {
+        if (n < 2) {
+            return n;
+        }
+        int p = 0, q = 0, r = 1;
+        for (int i = 2; i <= n; ++i) {
+            p = q; 
+            q = r; 
+            r = p + q;
+        }
+        return r;
+    }
+}"
+22,"from functools import lru_cache
+
+# Function for nth Fibonacci number
+
+# lru_cache will store the result
+# so we don't have to find
+# fibonacci for same num again
+
+
+@lru_cache(None)
+def fibonacci(num: int) -> int:
+
+	# check if num is less than 0
+	# it will return none
+	if num < 0:
+		print(""Incorrect input"")
+		return
+
+	# check if num between 1, 0
+	# it will return num
+	elif num < 2:
+		return num
+
+	# return the fibonacci of num - 1 & num - 2
+	return fibonacci(num - 1) + fibonacci(num - 2)
+
+
+# Driver Program
+print(fibonacci(9))
+
+"," function memo(func) {
+  const cache = [1,1]
+  return (n) => {
+   if (!cache[n]) {
+     cache[n] = func(n)
+   }
+   result = cache[n]
+   //----> console.log(cache)
+   return result
+  }
+}"
+23,"def fibonacci(n, memo={}):
+	if n <= 0:
+		return 0
+	elif n == 1:
+		return 1
+	elif n in memo:
+		return memo[n]
+	else:
+		memo[n] = fibonacci(n-1) + fibonacci(n-2)
+		return memo[n]
+
+# Driver Program
+print(fibonacci(9))","Procedure Recursive_Fibonacci(n)
+    int f0, f1
+    f0 := 0
+    f1 := 1
+    if(n <= 1):
+        return n
+    return Recursive_Fibonacci(n-1) + Recursive_Fibonacci(n-2)
+END Recursive_Fibonacci"
+24,"# Python 3 program for recursive binary search.
+# Modifications needed for the older Python 2 are found in comments.
+
+# Returns index of x in arr if present, else -1
+def binary_search(arr, low, high, x):
+
+	# Check base case
+	if high >= low:
+
+		mid = (high + low) // 2
+
+		# If element is present at the middle itself
+		if arr[mid] == x:
+			return mid
+
+		# If element is smaller than mid, then it can only
+		# be present in left subarray
+		elif arr[mid] > x:
+			return binary_search(arr, low, mid - 1, x)
+
+		# Else the element can only be present in right subarray
+		else:
+			return binary_search(arr, mid + 1, high, x)
+
+	else:
+		# Element is not present in the array
+		return -1
+
+# Test array
+arr = [ 2, 3, 4, 10, 40 ]
+x = 10
+
+# Function call
+result = binary_search(arr, 0, len(arr)-1, x)
+
+if result != -1:
+	print(""Element is present at index"", str(result))
+else:
+	print(""Element is not present in array"")"," binarySearch(arr, x, low, high)
+        repeat till low = high
+               mid = (low + high)/2
+                   if (x == arr[mid])
+                   return mid
+   
+                   else if (x > arr[mid]) // x is on the right side
+                       low = mid + 1
+   
+                   else                  // x is on the left side
+                       high = mid - 1"
+25,"# Iterative Binary Search Function
+# It returns index of x in given array arr if present,
+# else returns -1
+def binary_search(arr, x):
+	low = 0
+	high = len(arr) - 1
+	mid = 0
+
+	while low <= high:
+
+		mid = (high + low) // 2
+
+		# If x is greater, ignore left half
+		if arr[mid] < x:
+			low = mid + 1
+
+		# If x is smaller, ignore right half
+		elif arr[mid] > x:
+			high = mid - 1
+
+		# means x is present at mid
+		else:
+			return mid
+
+	# If we reach here, then the element was not present
+	return -1
+
+
+# Test array
+arr = [ 2, 3, 4, 10, 40 ]
+x = 10
+
+# Function call
+result = binary_search(arr, x)
+
+if result != -1:
+	print(""Element is present at index"", str(result))
+else:
+	print(""Element is not present in array"")"," binarySearch(arr, x, low, high)
+           if low > high
+               return False 
+   
+           else
+               mid = (low + high) / 2 
+               if x == arr[mid]
+                   return mid
+       
+               else if x > arr[mid]        // x is on the right side
+                   return binarySearch(arr, x, mid + 1, high)
+               
+               else                        // x is on the left side
+                   return binarySearch(arr, x, low, mid - 1)"
+26,"# Python program for implementation of Bubble Sort
+
+
+def bubbleSort(arr):
+	n = len(arr)
+
+	# Traverse through all array elements
+	for i in range(n):
+
+		# Last i elements are already in place
+		for j in range(0, n-i-1):
+
+			# traverse the array from 0 to n-i-1
+			# Swap if the element found is greater
+			# than the next element
+			if arr[j] > arr[j+1]:
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+
+
+# Driver code to test above
+if __name__ == ""__main__"":
+arr = [5, 1, 4, 2, 8]
+
+bubbleSort(arr)
+
+print(""Sorted array is:"")
+for i in range(len(arr)):
+	print(""%d"" % arr[i], end="" "")","begin BubbleSort(list)
+
+   for all elements of list
+      if list[i] > list[i+1]
+         swap(list[i], list[i+1])
+      end if
+   end for
+   
+   return list
+   
+end BubbleSort"
+27,"# Python code to illustrate read() mode
+file = open(""file.txt"", ""r"")
+print (file.read())","FILE * filePointer; 
+
+filePointer = fopen(?fileName.txt?, ?r?);
+
+fscanf(filePointer, ""%s %s %s %d"", str1, str2, str3, &year);"
+28,"# Python code to create a file
+file = open('geek.txt','w')
+file.write(""This is the write command"")
+file.write(""It allows us to write in a particular file"")
+file.close()","FILE *filePointer ; 
+
+filePointer = fopen(?fileName.txt?, ?w?);
+
+fprintf(filePointer, ""%s %s %s %d"", ""We"", ""are"", ""in"", 2012);"
+29,"# Python code to illustrate append() mode
+file = open('geek.txt', 'a')
+file.write(""This will add this line"")
+file.close()","FILE *filePointer ; 
+
+filePointer= fopen(?fileName.txt?, ?w?);
+
+---------- Some file Operations -------
+
+fclose(filePointer)"
+30,"# Python program for implementation of MergeSort
+def mergeSort(arr):
+	if len(arr) > 1:
+
+		# Finding the mid of the array
+		mid = len(arr)//2
+
+		# Dividing the array elements
+		L = arr[:mid]
+
+		# into 2 halves
+		R = arr[mid:]
+
+		# Sorting the first half
+		mergeSort(L)
+
+		# Sorting the second half
+		mergeSort(R)
+
+		i = j = k = 0
+
+		# Copy data to temp arrays L[] and R[]
+		while i < len(L) and j < len(R):
+			if L[i] <= R[j]:
+				arr[k] = L[i]
+				i += 1
+			else:
+				arr[k] = R[j]
+				j += 1
+			k += 1
+
+		# Checking if any element was left
+		while i < len(L):
+			arr[k] = L[i]
+			i += 1
+			k += 1
+
+		while j < len(R):
+			arr[k] = R[j]
+			j += 1
+			k += 1
+
+# Code to print the list
+
+
+def printList(arr):
+	for i in range(len(arr)):
+		print(arr[i], end="" "")
+	print()
+
+
+# Driver Code
+if __name__ == '__main__':
+	arr = [12, 11, 13, 5, 6, 7]
+	print(""Given array is"", end=""\n"")
+	printList(arr)
+	mergeSort(arr)
+	print(""Sorted array is: "", end=""\n"")
+	printList(arr)
+
+# This code is contributed by Mayank Khanna","MERGE_SORT(arr, beg, end)  
+  
+if beg < end  
+set mid = (beg + end)/2  
+MERGE_SORT(arr, beg, mid)  
+MERGE_SORT(arr, mid + 1, end)  
+MERGE (arr, beg, mid, end)  
+end of if  
+  
+END MERGE_SORT  "
+31,"def bubbleSort(arr):
+
+    n = len(arr)
+ 
+
+    # Traverse through all array elements
+
+    for i in range(n):
+ 
+
+        # Last i elements are already in place
+
+        for j in range(0, n-i-1):
+ 
+
+            # traverse the array from 0 to n-i-1
+
+            # Swap if the element found is greater
+
+            # than the next element
+
+            if arr[j] > arr[j+1]:
+
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+ 
+ 
+# Driver code to test above
+
+if _name_ == ""_main_"":
+
+  arr = [5, 1, 4, 2, 8]
+ 
+
+  bubbleSort(arr)
+ 
+
+  print(""Sorted array is:"")
+
+  for i in range(len(arr)):
+
+      print(""%d"" % arr[i], end="" "")","1. Run a nested for loop to traverse the input array using two variables i and j, such that 0 ó i < n-1 and 0 ó j < n-i-1
+2. If arr[j] is greater than arr[j+1] then swap these adjacent elements, else move on
+3. Print the sorted array"
+32,"def binary_search(arr, low, high, x):
+ 
+
+    # Check base case
+
+    if high >= low:
+ 
+
+        mid = (high + low) // 2
+ 
+
+        # If element is present at the middle itself
+
+        if arr[mid] == x:
+
+            return mid
+ 
+
+        # If element is smaller than mid, then it can only
+
+        # be present in left subarray
+
+        elif arr[mid] > x:
+
+            return binary_search(arr, low, mid - 1, x)
+ 
+
+        # Else the element can only be present in right subarray
+
+        else:
+
+            return binary_search(arr, mid + 1, high, x)
+ 
+
+    else:
+
+        # Element is not present in the array
+
+        return -1
+ 
+# Test array
+
+arr = [ 2, 3, 4, 10, 40 ]
+
+x = 10
+ 
+# Function call
+
+result = binary_search(arr, 0, len(arr)-1, x)
+ 
+
+if result != -1:
+
+    print(""Element is present at index"", str(result))
+
+else:
+
+    print(""Element is not present in array"")","1. Compare x with the middle element.
+2. If x matches with the middle element, we return the mid index.
+3. Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half.
+4. Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half."
+33,"def partition(array, low, high):
+ 
+
+    # choose the rightmost element as pivot
+
+    pivot = array[high]
+ 
+
+    # pointer for greater element
+
+    i = low - 1
+ 
+
+    # traverse through all elements
+
+    # compare each element with pivot
+
+    for j in range(low, high):
+
+        if array[j] <= pivot:
+ 
+
+            # If element smaller than pivot is found
+
+            # swap it with the greater element pointed by i
+
+            i = i + 1
+ 
+
+            # Swapping element at i with element at j
+
+            (array[i], array[j]) = (array[j], array[i])
+ 
+
+    # Swap the pivot element with the greater element specified by i
+
+    (array[i + 1], array[high]) = (array[high], array[i + 1])
+ 
+
+    # Return the position from where partition is done
+
+    return i + 1
+ 
+# function to perform quicksort
+ 
+ 
+
+def quickSort(array, low, high):
+
+    if low < high:
+ 
+
+        # Find pivot element such that
+
+        # element smaller than pivot are on the left
+
+        # element greater than pivot are on the right
+
+        pi = partition(array, low, high)
+ 
+
+        # Recursive call on the left of pivot
+
+        quickSort(array, low, pi - 1)
+ 
+
+        # Recursive call on the right of pivot
+
+        quickSort(array, pi + 1, high)
+ 
+ 
+
+data = [1, 7, 4, 1, 10, 9, -2]
+
+print(""Unsorted Array"")
+
+print(data)
+ 
+
+size = len(data)
+ 
+
+quickSort(data, 0, size - 1)
+ 
+
+print('Sorted Array in Ascending Order:')
+
+print(data)","// low  --> Starting index,
+// high  --> Ending index
+quickSort(arr[], low, high) {
+
+  // Till starting index is lesser than ending index
+  if (low < high) {
+
+    // pi is partitioning index,
+    // arr[p] is now at right place
+    pi = partition(arr, low, high);
+
+    // Before pi
+    quickSort(arr, low, pi - 1);
+    // After pi
+    quickSort(arr, pi + 1, high);
+  }
+}"
+34,"def insertionSort(arr):
+ 
+
+    # Traverse through 1 to len(arr)
+
+    for i in range(1, len(arr)):
+ 
+
+        key = arr[i]
+ 
+
+        # Move elements of arr[0..i-1], that are
+
+        # greater than key, to one position ahead
+
+        # of their current position
+
+        j = i-1
+
+        while j >= 0 and key < arr[j] :
+
+                arr[j + 1] = arr[j]
+
+                j -= 1
+
+        arr[j + 1] = key
+ 
+ 
+# Driver code to test above
+
+arr = [12, 11, 13, 5, 6]
+insertionSort(arr)
+
+for i in range(len(arr)):
+
+    print (""% d"" % arr[i])","1. Iterate from arr[1] to arr[N] over the array. 
+2. Compare the current element (key) to its predecessor. 
+3. If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element."
+35,"def search(arr, N, x):
+ 
+    for i in range(0, N):
+        if (arr[i] == x):
+            return i
+    return -1
+ 
+ 
+# Driver Code
+if _name_ == ""_main_"":
+    arr = [2, 3, 4, 10, 40]
+    x = 10
+    N = len(arr)
+ 
+    # Function call
+    result = search(arr, N, x)
+    if(result == -1):
+        print(""Element is not present in array"")
+    else:
+        print(""Element is present at index"", result)","Step 1: First, read the search element (Target element) in the array.
+Step 2: Set an integer i = 0 and repeat steps 3 to 4 till i reaches the end of the array.
+Step 3: Match the key with arr[i].
+Step 4: If the key matches, return the index. Otherwise, increment i by 1."
+36,"import sys
+
+A = [64, 25, 12, 22, 11]
+ 
+# Traverse through all array elements
+
+for i in range(len(A)):
+
+     
+
+    # Find the minimum element in remaining 
+
+    # unsorted array
+
+    min_idx = i
+
+    for j in range(i+1, len(A)):
+
+        if A[min_idx] > A[j]:
+
+            min_idx = j
+
+             
+
+    # Swap the found minimum element with 
+
+    # the first element        
+
+    A[i], A[min_idx] = A[min_idx], A[i]
+ 
+# Driver code to test above
+
+print (""Sorted array"")
+
+for i in range(len(A)):
+
+    print(""%d"" %A[i],end="" , "")","1. Initialize minimum value(min_idx) to location 0.
+2. Traverse the array to find the minimum element in the array.
+3. While traversing if any element smaller than min_idx is found then swap both values.
+4. Then, increment min_idx to point to the next element.
+Repeat until the array is sorted."
+37,"#Initialize array     
+arr = [1, 2, 3, 4, 5];     
+     
+print(""Elements of given array: "");    
+#Loop through the array by incrementing the value of i     
+    
+for i in range(0, len(arr)):    
+    print(arr[i])","STEP 1: Declare and initialize an array.
+STEP 2: Loop through the array by incrementing the value of i.
+STEP 3: Finally, print out each element of the array."
+38,"from collections import defaultdict
+ 
+# This class represents a directed graph using
+# adjacency list representation
+ 
+ 
+
+class Graph:
+ 
+
+    # Constructor
+
+    def _init_(self):
+ 
+
+        # default dictionary to store graph
+
+        self.graph = defaultdict(list)
+ 
+
+    # function to add an edge to graph
+
+    def addEdge(self, u, v):
+
+        self.graph[u].append(v)
+ 
+
+    # A function used by DFS
+
+    def DFSUtil(self, v, visited):
+ 
+
+        # Mark the current node as visited
+
+        # and print it
+
+        visited.add(v)
+
+        print(v, end=' ')
+ 
+
+        # Recur for all the vertices
+
+        # adjacent to this vertex
+
+        for neighbour in self.graph[v]:
+
+            if neighbour not in visited:
+
+                self.DFSUtil(neighbour, visited)
+ 
+
+    # The function to do DFS traversal. It uses
+
+    # recursive DFSUtil()
+
+    def DFS(self, v):
+ 
+
+        # Create a set to store visited vertices
+
+        visited = set()
+ 
+
+        # Call the recursive helper function
+
+        # to print DFS traversal
+
+        self.DFSUtil(v, visited)
+ 
+# Driver's code
+ 
+ 
+# Create a graph given
+# in the above diagram
+
+if _name_ == ""_main_"":
+
+    g = Graph()
+
+    g.addEdge(0, 1)
+
+    g.addEdge(0, 2)
+
+    g.addEdge(1, 2)
+
+    g.addEdge(2, 0)
+
+    g.addEdge(2, 3)
+
+    g.addEdge(3, 3)
+ 
+
+    print(""Following is DFS from (starting from vertex 2)"")
+
+    # Function call
+
+    g.DFS(2)","1.  Create a recursive function that takes the index of the node and a visited array.
+2. Mark the current node as visited and print the node.
+3. Traverse all the adjacent and unmarked nodes and call the recursive function with the index of the adjacent node."
+39,"def bfsOfGraph(V, adj):
+ 
+
+    bfs_traversal = []
+
+    vis = [False]*V
+
+    for i in range(V):
+ 
+
+        # To check if already visited
+
+        if (vis[i] == False):
+
+            q = []
+
+            vis[i] = True
+
+            q.append(i)
+ 
+
+            # BFS starting from ith node
+
+            while (len(q) > 0):
+
+                g_node = q.pop(0)
+ 
+
+                bfs_traversal.append(g_node)
+
+                for it in adj[g_node]:
+
+                    if (vis[it] == False):
+
+                        vis[it] = True
+
+                        q.append(it)
+ 
+
+    return bfs_traversal","Step 1: Consider the graph you want to navigate.
+
+Step 2: Select any vertex in your graph, Say v1, from which you want to traverse the graph.
+
+Step 3:Examine any two data structure for traversing the graph.
+
+             Visited array(size of the graph)
+
+             Queue data structure
+
+Step 4:Starting from the vertex, you will add to the visited array, and afterward, you will v1?s adjacent vertices to the queue data structure.
+
+Step 5:Now,using the FIFO concept, you must remove the element from the queue , put it into the visited array, and then return to the queue to add the adjacent vertices of the removed element.
+
+Step 6:Repeat step 5 until the queue is not empty and no vertex is left to be visite"
+40,"from collections import defaultdict
+ 
+# This class represents a directed graph
+# using adjacency list representation
+ 
+ 
+
+class Graph:
+ 
+
+    # Constructor
+
+    def _init_(self):
+ 
+
+        # default dictionary to store graph
+
+        self.graph = defaultdict(list)
+ 
+
+    # function to add an edge to graph
+
+    def addEdge(self, u, v):
+
+        self.graph[u].append(v)
+ 
+
+    # Function to print a BFS of graph
+
+    def BFS(self, s):
+ 
+
+        # Mark all the vertices as not visited
+
+        visited = [False] * (max(self.graph) + 1)
+ 
+
+        # Create a queue for BFS
+
+        queue = []
+ 
+
+        # Mark the source node as
+
+        # visited and enqueue it
+
+        queue.append(s)
+
+        visited[s] = True
+ 
+
+        while queue:
+ 
+
+            # Dequeue a vertex from
+
+            # queue and print it
+
+            s = queue.pop(0)
+
+            print(s, end="" "")
+ 
+
+            # Get all adjacent vertices of the
+
+            # dequeued vertex s. If a adjacent
+
+            # has not been visited, then mark it
+
+            # visited and enqueue it
+
+            for i in self.graph[s]:
+
+                if visited[i] == False:
+
+                    queue.append(i)
+
+                    visited[i] = True
+ 
+# Driver code
+ 
+ 
+# Create a graph given in
+# the above diagram
+
+g = Graph()
+
+g.addEdge(0, 1)
+
+g.addEdge(0, 2)
+
+g.addEdge(1, 2)
+
+g.addEdge(2, 0)
+
+g.addEdge(2, 3)
+
+g.addEdge(3, 3)
+ 
+
+print(""Following is Breadth First Traversal""
+
+      "" (starting from vertex 2)"")
+
+g.BFS(2)","Step 1: Consider the graph you want to navigate.
+
+Step 2: Select any vertex in your graph, Say v1, from which you want to traverse the graph.
+
+Step 3:Examine any two data structure for traversing the graph.
+
+             Visited array(size of the graph)
+
+             Queue data structure
+
+Step 4:Starting from the vertex, you will add to the visited array, and afterward, you will v1?s adjacent vertices to the queue data structure.
+
+Step 5:Now,using the FIFO concept, you must remove the element from the queue , put it into the visited array, and then return to the queue to add the adjacent vertices of the removed element.
+
+Step 6:Repeat step 5 until the queue is not empty and no vertex is left to be visite"
+41,"def binary_search(arr, low, high, x): if high >= low: mid = (high + low) // 2 middle itself if arr[mid] == x: return mid then it can only elif arr[mid] > x: return binary_search(arr, low, mid - 1, x) present in right subarray else: return binary_search(arr, mid + 1, high, x) else: array return -1 arr = [ 2, 3, 4, 10, 40 ] x = 10 result = binary_search(arr, 0, len(arr)-1, x) if result != -1: print(""Element is present at index"", str(result)) else: print(""Element is not present in array"")","1. Compare x with the middle element. 2. If x matches with the middle element, we return the mid index. 3. Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. 4. Then we apply the algorithm again for the right half. 5. Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half."
+42,"def search(arr, x): for i in range(len(arr)): if arr[i] == x: return i return -1","1. Start from the leftmost element of arr[] and one by one compare x with each element of arr[] 2. If x matches with an element, return the index. 3. If x doesn’t match with any of the elements, return -1."
+43,"def search(arr, curr_index, key): if curr_index == -1: return -1 if arr[curr_index] == key: return curr_index return search(arr, curr_index-1, key)","1. Start from the leftmost element of arr[] and one by one compare x with each element of arr[] 2. If x matches with an element, return the index. 3. If x doesn’t match with any of the elements, return -1."
+44,"import datetime now = datetime.datetime.now() print (""Current date and time : "") print (now.strftime(""%Y-%m-%d %H:%M:%S""))","1. import datetime imports the datetime module which supplies classes for manipulating dates and times. 2. now = datetime.datetime.now() creates a datetime object for the current date and time. 3. print (""Current date and time : "") prints the string ""Current date and time : "" to the console. 4. print (now.strftime(""%Y-%m-%d %H:%M:%S"")) uses the strftime() method of the datetime object to format the date and time as a string in the format ""YYYY-MM-DD HH:MM:SS"" and prints it to the console."
+45,"dict1 = {'A' : [1, 3, 5, 4], 'B' : [4, 6, 8, 10], 'C' : [6, 12, 4 ,8], 'D' : [5, 7, 2]} print(""The original dictionary is : "" ,dict1) res = list(sorted({ele for val in dict1.values() for ele in val})) print(""The unique values list is : "" , res) ",Step 1- Initialise a dictionary with keys and values Step 2- Print the original dictionary Step 3- Declare a list to store the result Step 4- Using values() to get the values from the dictionary Step 5- Use list comprehension to get values that are not already present in the dictionary Step 6- Use the sorted() method to sort the elements in ascending order Step 7- Print the result
+46,"dict1 = {'A' : [10, 11, 2], 'B' : [4, 6, 8, 10], 'C' : [9, 10, 23, 11, 2], 'D' : [10, 3, 4]} print(""The original dictionary is : "" ,dict1) res = list(sorted(set(chain(*dict1.values())))) print(""The unique values list is : "" , res) ",Step 1- Import chain in the program Step 2- Initialise a test dictionary with keys and values Step 3- Print the original dictionary Step 4- Declare a list to store the result Step 4- Using values() select the values from the dictionary Step 5- In list comprehension use chain() to get values that are not already present in the dictionary Step 6- Use the sorted() method to sort the elements in ascending order Step 7- Print the result
+47,"# to print a BFS of a graph
+def bfs(node):
+
+    # mark vertices as False means not visited
+    visited = [False] * (len(graph))
+
+    # make an empty queue for bfs
+    queue = []
+
+    # mark gave node as visited and add it to the queue
+    visited.append(node)
+    queue.append(node)
+
+    while queue:
+        # Remove the front vertex or the vertex at the 0th index from the queue and print that vertex.
+        v = queue.pop(0)
+        print(v, end="" "")
+
+        # Get all adjacent nodes of the removed node v from the graph hash table.
+        # If an adjacent node has not been visited yet,
+        # then mark it as visited and add it to the queue.
+        for neigh in graph[v]:
+            if neigh not in visited:
+                visited.append(neigh)
+                queue.append(neigh)                                                                  # Driver Code
+if __name__ == ""__main__"":
+    bfs('A')                                                                                                             ","The algorithm can be summarized as follows:
+
+1.Start by adding the root node to a queue
+2. While the queue is not empty, dequeue the next node
+3. If the node has not been visited, mark it as visited and process it
+4. Add all unvisited neighbours of the node to the queue"
+48,"# AIM : To implement program of Tower of Hanoi 
+def tower_of_hanoi(n, source, auxiliary, destination):
+    if n == 1:
+        print(f""Move disk 1 from {source} to {destination}"")
+        return
+    tower_of_hanoi(n-1, source, destination, auxiliary)
+    print(f""Move disk {n} from {source} to {destination}"")
+    tower_of_hanoi(n-1, auxiliary, source, destination)
+
+# Example Usage:
+tower_of_hanoi(3, 'A', 'B', 'C')
+","1. Start
+2. Read the number of disks n
+3. Initialize the source tower as Tower 1, auxiliary tower as Tower 2 and destination tower as Tower 3
+Call the function tower_of_hanoi(n, source=1, auxiliary=2, destination=3)
+4. Function tower_of_hanoi(n, source, auxiliary, destination):
+5. a. if n = 1, print ""Move disk 1 from source to destination"" and return
+b. Recursively call tower_of_hanoi with n-1 disks, source as source, destination as auxiliary, and auxiliary as destination
+c. Print ""Move disk n from source to destination""
+d. Recursively call tower_of_hanoi with n-1 disks, source as auxiliary, destination as destination, and auxiliary as source
+6. End"
+49,"# Sorting Algorithms
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print(""Sorted array is:"", arr) ","Input: An array of n elements
+
+1. Start the outer loop from i = 0 to n-1
+2. Start the inner loop from j = 0 to n-i-1
+3. Check if the element at j is greater than the element at j+1
+4.If yes, then swap the elements
+5.Continue with the inner loop till j = n-i-1
+6.Continue with the outer loop till i = n-1
+7.Output the sorted array"
+50,"# AIM : Travellinng Salesperson Problem 
+
+from sys import maxsize
+from itertools import permutations
+V = 4                                                                                                                     
+def travellingSalesmanProblem(graph, s):
+    vertex = []
+    for i in range(V):
+        if i != s:
+            vertex.append(i)
+
+    min_path = maxsize
+    next_permutation=permutations(vertex)
+    for i in next_permutation:
+        current_pathweight = 0
+        k = s
+        for j in i:
+            current_pathweight += graph[k][j]
+            k = j
+        current_pathweight += graph[k][s]
+        min_path = min(min_path, current_pathweight)
+
+    return min_path
+if __name__ == ""__main__"":
+    graph = [[0, 10, 15, 20], [10, 0, 35, 25],
+            [15, 35, 0, 30], [20, 25, 30, 0]]
+    s = 0
+    print(travellingSalesmanProblem(graph, s))","1. Define a function named travellingSalesmanProblem which takes two arguments - graph and starting vertex s.
+2. Create an empty list named vertex.
+3. For i in range(V), append i to the vertex list if i is not equal to s.
+4. Initialize a variable min_path with maximum integer value.
+5. Generate all possible permutations of the vertex list and store it in a variable named next_permutation.
+6. For each permutation in next_permutation, initialize current_pathweight to 0 and k to s.
+7. For each j in the current permutation, 8. add the weight of the edge from k to j in current_pathweight and update k as j.
+9. Add the weight of the edge from k to s in current_pathweight.
+10. Find the minimum of min_path and current_pathweight and store it in min_path.
+11. Return the value of min_path.
+12. In the main block of the code, create a graph using a 2D array.
+13. Initialize the starting vertex s to 0.
+14. Call the travellingSalesmanProblem function with the graph and starting vertex s as arguments.
+15. Print the returned value."
+51,"# AIM : Python Program to implement monkey banana problem 
+
+import random
+
+class Monkey:
+    def __init__(self, bananas):
+        self.bananas = bananas
+        
+    def __repr__(self):
+        return ""Monkey with %d bananas."" % self.bananas
+    
+monkeys = [Monkey(random.randint(0, 50)) for i in range(5)]
+print (""Random monkeys:"")
+print (monkeys)
+
+print()                                                                                                       def number_of_bananas(monkey):
+    """"""Returns number of bananas that monkey has.""""""
+    return monkey.bananas
+
+print (""number_of_bananas( FIRST MONKEY ): "", number_of_bananas(monkeys[0]))
+
+print()
+
+max_monkey = max(monkeys, key=number_of_bananas)
+print (""Max monkey: "", max_monkey)","1. Create a Monkey class with an attribute bananas.
+2. Initialize a list of 5 Monkey objects with random integers from 0 to 50.
+3. Define a function number_of_bananas that takes a monkey as input and returns the number of bananas it has.
+4. Find the monkey with the most bananas using the max function and the number_of_bananas function.
+5. Print the list of monkeys, the number of bananas of the first monkey, and the monkey with the most bananas."
+52,"from queue import PriorityQueue
+
+def uniform_cost_search(start, goal, successors, cost):
+    # Create a priority queue for the search frontier
+    frontier = PriorityQueue()
+    # Add the start state to the frontier with priority 0
+    frontier.put((0, start))
+    # Create an empty set to store visited states
+    visited = set()
+    # Create a dictionary to store the cost to reach each state
+    costs = {start: 0}
+    # Create a dictionary to store the predecessor of each state
+    predecessors = {start: None}
+
+    # Start the search
+    while not frontier.empty():
+        # Pop the state with the lowest priority (i.e. lowest cost so far)
+        _, state = frontier.get()
+        # Check if we have reached the goal state
+        if state == goal:
+            # Reconstruct the path to the goal state
+            path = []
+            while state is not None:
+                path.append(state)
+                state = predecessors[state]
+            path.reverse()
+            return path
+
+        # Mark the current state as visited
+        visited.add(state)
+
+        # Expand the current state and add its successors to the frontier
+        for successor in successors(state):
+            new_cost = costs[state] + cost(state, successor)
+            if successor not in visited and (successor not in costs or new_cost < costs[successor]):
+                frontier.put((new_cost, successor))
+                costs[successor] = new_cost
+                predecessors[successor] = state
+
+    # If we get here, we have not found a path to the goal state
+    return None","from queue import PriorityQueue
+
+# Define a node class to represent each state in the search space
+class Node:
+    def __init__(self, state, cost):
+        self.state = state
+        self.cost = cost
+
+    # Define comparison operator to allow PriorityQueue to compare nodes based on their cost values
+    def __lt__(self, other):
+        return self.cost < other.cost
+
+def uniform_cost_search(start_state, goal_state, successors, heuristic):
+    # Initialize frontier and explored sets
+    frontier = PriorityQueue()
+    explored = set()
+
+    # Add the start node to the frontier
+    frontier.put(Node(start_state, 0))
+
+    while not frontier.empty():
+        # Remove the node with the lowest cost from the frontier
+        current_node = frontier.get()
+
+        # Check if current node is the goal state
+        if current_node.state == goal_state:
+            return current_node.cost
+
+        # Add current node to explored set
+        explored.add(current_node.state)
+
+        # Generate successor nodes and add them to the frontier
+        for action, state, cost in successors(current_node.state):
+            if state not in explored:
+                new_node = Node(state, current_node.cost + cost)
+                frontier.put(new_node)
+
+    # If goal state not found, return failure
+    return None"
+53,"# Python program to check if a number is prime or not
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+num = int(input(""Enter a number: ""))
+if is_prime(num):
+    print(num, ""is a prime number"")
+else:
+    print(num, ""is not a prime number"")","1. Define a function is_prime(n) to check if a number is prime or not
+2. If the number is less than or equal to 1, return False
+3. Loop through all the numbers from 2 to the square root of the number + 1
+4. If the number is divisible by any number between 2 and its square root, return False
+5. Otherwise, return True
+6. Take input from the user for a number
+7. If the number is prime, print it is a prime number
+8. Otherwise, print it is not a prime number"
+54,"def linear_search(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i
+    return -1","1. Set arr to the input array and x to the input search value.
+2. Loop over the indices i in the range of the length of the array.
+3. If the value of arr[i] is equal to x, return i.
+4. If the loop completes without finding x, return -1."
+55,"def selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i+1, len(arr)):\n            if arr[min_idx] > arr[j]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]","1. Start\n2. For i in range(len(arr)):\n3.    Set min_idx = i\n4.    For j in range(i+1, len(arr)):\n5.        If arr[min_idx] > arr[j], set min_idx = j\n6.    Swap arr[i] and arr[min_idx]\n7. Stop"
+56,"def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+    while low <= high:
+        mid = (high + low) // 2
+        if arr[mid] < x:
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            return mid
+    return -1","1. Start
+2. Read the array arr and the value x to search for
+3. Set low = 0, high = length of arr - 1
+4. While low is less than or equal to high, do steps 5-9
+5. Set mid = (high + low) // 2
+6. If arr[mid] is less than x, set low = mid + 1
+7. Else if arr[mid] is greater than x, set high = mid - 1
+8. Else return mid
+9. If x is not found, return -1
+10. Stop"
+57,"# Insertion sort using a for loop
+def insertion_sort1(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = key
+    return arr                                                                                                          # Example usage                                                                                                   arr = [12, 11, 13, 5, 6]
+print(insertion_sort1(arr))","1. Take the first element of the array as sorted and compare the next element with it.
+2. If the next element is greater than the sorted element, then leave it as it is and move to the next element.
+3. If the next element is smaller than the sorted element, then shift the sorted element to the next position and compare the next element with it.
+4. Repeat step 3 until the element is in the correct position.
+5. Repeat steps 2-4 for all elements in the array."
+58,"
+# Insertion sort using a while loop
+def insertion_sort2(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = key
+    return arr                                                                                                                  # Example usage
+arr = [12, 11, 13, 5, 6]
+print(insertion_sort2(arr))","1. Take the first element of the array as sorted and compare the next element with it.
+2. If the next element is greater than the sorted element, then leave it as it is and move to the next element.
+3. If the next element is smaller than the sorted element, then shift the sorted element to the next position and compare the next element with it.
+4. Repeat step 3 until the element is in the correct position.
+5. Repeat steps 2-4 for all elements in the array."
+59,"# Insertion sort using recursion
+def insertion_sort3(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        key = arr[0]
+        rest = insertion_sort3(arr[1:])
+        i = 0
+        while i < len(rest) and key > rest[i]:
+            i += 1
+        return rest[:i] + [key] + rest[i:]
+
+# Example usage
+arr = [12, 11, 13, 5, 6]
+print(insertion_sort3(arr))","1. Take the first element of the array as sorted and compare the next element with it.
+2. If the next element is greater than the sorted element, then leave it as it is and move to the next element.
+3. If the next element is smaller than the sorted element, then shift the sorted element to the next position and compare the next element with it.
+4. Repeat step 3 until the element is in the correct position.
+5. Repeat steps 2-4 for all elements in the array."
+60,"def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        left = [x for x in arr[1:] if x < pivot]
+        right = [x for x in arr[1:] if x >= pivot]
+        return quick_sort(left) + [pivot] + quick_sort(right)","1. Select a pivot element from the array.
+2. Partition the array such that all elements less than the pivot are on the left and all elements greater than the pivot are on the right.
+3. Recursively apply the above steps to the subarrays on the left and right of the pivot."
+61,"import random
+
+def randomized_quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = random.choice(arr)
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return randomized_quick_sort(left) + middle + randomized_quick_sort(right)","1. Select a random pivot element from the array.
+2. Partition the array such that all elements less than the pivot are on the left and all elements greater than the pivot are on the right.
+3. Recursively apply the above steps to the subarrays on the left and right of the pivot."
+62,"def in_place_quick_sort(arr, low, high):
+    if low < high:
+        pivot_index = partition(arr, low, high)
+        in_place_quick_sort(arr, low, pivot_index - 1)
+        in_place_quick_sort(arr, pivot_index + 1, high)
+
+def partition(arr, low, high):
+    pivot = arr[high]
+    i = low - 1
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return i + 1","1. Select a pivot element from the array.
+2. Partition the array such that all elements less than the pivot are on the left and all elements greater than the pivot are on the right.
+3. Recursively apply the above steps to the subarrays on the left and right of the pivot.
+4. The in-place version of quick sort swaps elements within the original array rather than creating new subarrays."
+63,"def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+a = int(input(""Enter first number: ""))
+b = int(input(""Enter second number: ""))
+print(""GCD of"", a, ""and"", b, ""is"", gcd(a, b))","1. Input two numbers a and b
+2. If b is equal to 0, return a as the GCD
+3. Else, compute the remainder of a divided by b          4. Recursively call the function with b and the remainder as arguments"
+64,"def is_palindrome(s):
+    s = s.lower().replace("" "", """")
+    i, j = 0, len(s)-1
+    while i < j:
+        if s[i] != s[j]:
+            return False
+        i += 1
+        j -= 1
+    return True
+
+s = input(""Enter a string: "")
+if is_palindrome(s):
+    print(s, ""is a palindrome"")
+else:
+    print(s, ""is not a palindrome"")","1. Input a string
+2. Convert the string to lowercase and remove any spaces
+3. Initialize two pointers, one at the beginning of the string and one at the end
+4. While the pointers don't cross each other, do:
+a. If the characters at the two pointers are not the same, the string is not a palindrome
+b. Move the pointers towards each other
+5. If the pointers have crossed each other, the string is a palindrome"
+65,"def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+n = int(input(""Enter a number: ""))
+sum = 0
+for i in range(2, n+1):
+    if is_prime(i):
+        sum += i
+print(""Sum of prime numbers between 1 and"", n, ""is"", sum)","1. Input a number N
+2. Initialize a variable sum to 0
+3. For i in range from 2 to N, do:
+a. If i is prime, add it to sum
+4. Print sum"
+66,"def find_min_max(arr):
+    n = len(arr)
+    if n == 1:
+        return arr[0], arr[0]
+    elif n == 2:
+        if arr[0] > arr[1]:
+            return arr[1], arr[0]
+        else:
+            return arr[0], arr[1]
+    else:
+        # initialize min and max to the first element of the array
+        if arr[0] > arr[1]:
+            max_val = arr[0]
+            min_val = arr[1]
+        else:
+            max_val = arr[1]
+            min_val = arr[0]
+
+        for i in range(2, n):
+            # update max value
+            if arr[i] > max_val:
+                max_val = arr[i]
+            # update min value
+            elif arr[i] < min_val:
+                min_val = arr[i]
+
+        return min_val, max_val
+
+
+# Example usage
+arr = [3, 5, 1, 8, 2, 9, 4, 7, 6]
+min_val, max_val = find_min_max(arr)
+print(""Minimum element is:"", min_val)
+print(""Maximum element is:"", max_val)","Input: An array of n elements
+
+Output: Maximum and minimum elements in the array
+
+1. Initialize max and min to the first element of the array. 
+2. For i in range from 1 to n-1, do:
+a. If the i-th element of the array is greater than max, set max to that element
+b. If the i-th element of the array is less than min, set min to that element
+3. Return max and min"
+67,"import math
+
+def sieve_of_eratosthenes(n):
+    primes = [True] * (n+1)
+    primes[0] = primes[1] = False
+    for i in range(2, int(math.sqrt(n))+1):
+        if primes[i]:
+            for j in range(i*i, n+1, i):
+                primes[j] = False
+    for i in range(2, n+1):
+        if primes[i]:
+            print(i)
+
+sieve_of_eratosthenes(50)","1. Create a boolean array of size n+1, where each element is initialized to True
+2. For each number i in the range 2 to square root of n:
+a. If the i-th element is True, then set all multiples of i as False in the array
+ 3. Print all numbers in the array that are True (i.e., prime numbers)"
+68,"def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    i = j = 0
+    merged = []
+
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            merged.append(left[i])
+            i += 1
+        else:
+            merged.append(right[j])
+            j += 1
+
+    merged.extend(left[i:])
+    merged.extend(right[j:])
+
+    return merged","1. If the length of the array is less than or equal to 1, return the array.
+2. Divide the array into two halves.
+3. Recursively sort the left half and right half of the array.
+4. Merge the two sorted halves."
+69,"from collections import deque
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    merged = deque()
+    left = deque(left)
+    right = deque(right)
+
+    while left and right:
+        if left[0] <= right[0]:
+            merged.append(left.popleft())
+        else:
+            merged.append(right.popleft())
+
+    merged.extend(left)
+    merged.extend(right)
+
+    return list(merged)","1. If the length of the array is less than or equal to 1, return the array.
+2.Divide the array into two halves.
+3. Recursively sort the left half and right half of the array.
+4. Merge the two sorted halves."
+70,"def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+
+    i = j = k = 0
+
+    while i < len(left","1. If the length of the array is less than or equal to 1, return the array.
+2. Divide the array into two halves.
+3. Recursively sort the left half and right half of the array.
+4. Merge the two sorted halves in-place."
+71,"def isPalindrome(s): return s == s[::-1] # Driver code s = ""kayak"" ans = isPalindrome(s) if ans: print(""Yes"") else: print(""No"")","1.We create a function ispalindrome
+2. Return a variable by slicing the parameter in a reverse way
+3.In our driver code, we wrote a string 
+4. Finally, in our if-else condition, we execute if it is a palindrome print yes or print no"
+72,"def isPalindrome(str): for i in range(O, int(len(str)/2)): if str[i] != str[len(str)-i-1]: return False return True # main function s = ""kayak"" ans = isPalindrome(s) if (ans): print(""Yes"") else: print(""No"")","1. A loop is run from starting to half the length and checking the first character to the last character of the string.
+2. And check from the second character to the second last character of the string.
+3. If any of the characters are mismatched, it is not a palindrome."
+73,"def isPalindrome(s): rev = ‘'.join(reversed(s)) if (s == rev): return True return False # main function s = ""kayak"" ans = isPalindrome(s) if(ans): print(""Yes"") else: print(""No"")","1. We create a function ispalindrome
+2. Use a predefined function ‘.join’ to reverse the input
+3. Check if both s and rev are same or not
+4. if yes then print ""Yes""
+5. Else print ""No"""
+74,"def isPalindrome(s): s = s.lower() 1 = len(s) if 1 <2: return True elif s(0) == s{l - 1): return isPalindrome(s[1: l - 1]) else: return False s = ""Kayak"" ans = isPalindrome(s) if ans: print(""Yes"") y else: print(""No"")","1. We create a function called ispalindrome
+2. Compare the first and last element of the string.
+3. Give the rest of the substring a recursive call to itself so that whole string will get compared for first and last element."
+75,"import math
+
+num = 5 
+factorial = math.factorial(num)
+
+print(""The factorial of"", num, ""is"", factorial)","1. Get a positive integer input (n) from the user.
+2. Iterate from 1 to n using a for loop (for loop is used to increment the number up to the given input)
+3. Using the below formula, calculate the factorial of a number = f*i.
+4. Print the output i.e the calculated factorial."
+76,"n = int (input (""Enter a number: ""))
+factorial = 1
+if n >= 1:
+    for i in range (1, n+1):
+        factorial=factorial *i
+print(""Factorial of the given number is: "", factorial)","1. Get a positive integer input (n) from the user.
+2. Iterate from 1 to n using a for loop (for loop is used to increment the number up to the given input)
+3. Using the below formula, calculate the factorial of a number = f*i.
+4. Print the output i.e the calculated factorial."
+77,"# Factorial of a number using recursion
+def recur_factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*recur_factorial(n-1)
+
+num = 5
+
+# check if the number is negative
+if num < 0:
+   print(""Sorry, factorial does not exist for negative numbers"")
+elif num == 0:
+   print(""The factorial of 0 is 1"")
+else:
+   print(""The factorial of"", num, ""is"", recur_factorial(num))","1. Get a positive integer input (n) from the user.
+2. Iterate from 1 to n using a for loop (for loop is used to increment the number up to the given input)
+3. Using the below formula, calculate the factorial of a number = f*i.
+4. Print the output i.e the calculated factorial."
+78,"celsius = int(input(""Enter the Temperature in Celsius :\n""))
+fahrenheit = (1.8 * celsius) + 32
+print(""Temperature in Fahrenheit :"", fahrenheit)","1. Define temperature in Celsius units.
+2. Apply in the formula Fahrenheit = (1.8 * celsius) + 32.
+3. Print the temperature in Fahrenheit"
+79,"class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+
+    def __init__(self):
+        self.head = None
+
+    def push(self, new_data):
+        new_node = Node(new_data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def printMiddle(self):
+        slow_ptr = self.head
+        fast_ptr = self.head
+
+        if self.head is not None:
+            while (fast_ptr is not None and fast_ptr.next is not None):
+                fast_ptr = fast_ptr.next.next
+                slow_ptr = slow_ptr.next
+            print(""The middle element is: "", slow_ptr.data)
+
+list1 = LinkedList()
+list1.push(8)
+list1.push(4)
+list1.push(15)
+list1.push(10)
+list1.push(5)
+list1.printMiddle()","1. Create two pointers slow and fast.
+2. Initially both slow and fast will be pointing to the head of the list.
+3. Now, make the slow pointer jump one place and the fast pointer jump two places until fast reaches the end of the list.4
+4. When the fast pointer reaches the end of the list, the slow pointer will be pointing to the middle of the list.
+5. In the end, return the data of the slow pointer, as the slow will be pointing to the middle of the list."
+80,"# Program to delete a node in a doubly-linked list
+
+# for Garbage collection
+import gc
+
+# A node of the doubly linked list
+class Node:
+        
+        # Constructor to create a new node
+        def __init__(self, data):
+                self.data = data
+                self.next = None
+                self.prev = None
+
+class DoublyLinkedList:
+        # Constructor for empty Doubly Linked List
+        def __init__(self):
+                self.head = None
+
+# Function to delete a node in a Doubly Linked List.
+# head_ref --> pointer to head node pointer.
+# dele --> pointer to node to be deleted
+
+        def deleteNode(self, dele):
+                
+                # Base Case
+                if self.head is None or dele is None:
+                        return
+                
+                # If node to be deleted is head node
+                if self.head == dele:
+                        self.head = dele.next
+
+                # Change next only if node to be deleted is NOT
+                # the last node
+                if dele.next is not None:
+                        dele.next.prev = dele.prev
+        
+                # Change prev only if node to be deleted is NOT
+                # the first node
+                if dele.prev is not None:
+                        dele.prev.next = dele.next
+                # Finally, free the memory occupied by dele
+                # Call python garbage collector
+                gc.collect()
+
+
+        # Given a reference to the head of a list and an
+        # integer, inserts a new node on the front of list
+        def push(self, new_data):
+
+                # 1. Allocates node
+                # 2. Put the data in it
+                new_node = Node(new_data)
+
+                # 3. Make next of new node as head and
+                # previous as None (already None)
+                new_node.next = self.head
+
+                # 4. change prev of head node to new_node
+                if self.head is not None:
+                        self.head.prev = new_node
+
+                # 5. move the head to point to the new node
+                self.head = new_node
+
+
+        def printList(self, node):
+                while(node is not None):
+                        print(node.data,end=' ')
+                        node = node.next
+
+
+# Driver program to test the above functions
+
+# Start with empty list
+dll = DoublyLinkedList()
+
+# Let us create the doubly linked list 10<->8<->4<->2
+dll.push(2);
+dll.push(4);
+dll.push(8);
+dll.push(10);
+
+print (""\n Original Linked List"",end=' ')
+dll.printList(dll.head)
+
+# delete nodes from doubly linked list
+dll.deleteNode(dll.head)
+dll.deleteNode(dll.head.next)
+dll.deleteNode(dll.head.next)
+# Modified linked list will be NULL<-8->NULL
+print(""\n Modified Linked List"",end=' ')
+dll.printList(dll.head)
+
+# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
+","1. If the list is empty, then there is nothing to delete, return.
+2. If the node to be deleted is the head node, then update the head node to point to the next node.
+3. If the node to be deleted is the tail node, then update the tail node to point to the previous node.
+4. If the node to be deleted is not the head or tail node, then update the previous node’s next pointer to point to the next node, and update the next node’s previous pointer to point to the previous node.
+5. Free the memory allocated to the node to be deleted."
+81,"Operators = set(['+', '-', '*', '/', '(', ')', '^'])  # collection of Operators
+
+Priority = {'+':1, '-':1, '*':2, '/':2, '^':3} # dictionary having priorities of Operators
+ 
+ 
+def infixToPostfix(expression): 
+
+    stack = [] # initialization of empty stack
+
+    output = '' 
+
+    
+
+    for character in expression:
+
+        if character not in Operators:  # if an operand append in postfix expression
+
+            output+= character
+
+        elif character=='(':  # else Operators push onto stack
+
+            stack.append('(')
+
+        elif character==')':
+
+            while stack and stack[-1]!= '(':
+
+                output+=stack.pop()
+
+            stack.pop()
+
+        else: 
+
+            while stack and stack[-1]!='(' and Priority[character]<=Priority[stack[-1]]:
+
+                output+=stack.pop()
+
+            stack.append(character)
+
+    while stack:
+
+        output+=stack.pop()
+
+    return output
+
+
+expression = input('Enter infix expression ')
+
+print('infix notation: ',expression)
+
+print('postfix notation: ',infixToPostfix(expression))","1. Reverse the given infix expression , change ‘(’ to ‘)’ and ‘)’ to ‘)’ .
+
+2. Convert this expression to postfix using the following steps .
+
+3. Scan all the symbols one by one from left to right in the obtained Infix Expression.
+
+4. If the reading symbol is operand, then immediately append it to the Postfix Expression .
+
+5. If the reading symbol is left parenthesis ‘( ‘, then Push it onto the Stack.
+
+6. If the reading symbol is right parenthesis ‘)’, then Pop all the contents of the stack until the respective left parenthesis is popped and append each popped symbol to Postfix Expression.
+
+7. If the reading symbol is operator (+ , – , * , /), then Push it onto the Stack. However, first pop the operators which are already on the stack that have higher or equal precedence than the current operator and append them to the postfix . If open parenthesis is there on top of the stack then push the operator into the stack.
+
+8. Keep repeating the above steps until all symbols are exhausted . If the input is over, pop all the remaining symbols from the stack and append them to the postfix .
+
+9. Now reverse this postfix expression , to get the final prefix expression ."
+82,"# Python3 code to Check for
+# balanced parentheses in an expression
+open_list = [""["",""{"",""(""]
+close_list = [""]"",""}"","")""]
+
+# Function to check parentheses
+def check(myStr):
+        stack = []
+        for i in myStr:
+                if i in open_list:
+                        stack.append(i)
+                elif i in close_list:
+                        pos = close_list.index(i)
+                        if ((len(stack) > 0) and
+                                (open_list[pos] == stack[len(stack)-1])):
+                                stack.pop()
+                        else:
+                                return ""Unbalanced""
+        if len(stack) == 0:
+                return ""Balanced""
+        else:
+                return ""Unbalanced""
+
+
+# Driver code
+string = ""{[]{()}}""
+print(string,""-"", check(string))
+
+string = ""[{}{})(]""
+print(string,""-"", check(string))
+
+string = ""((()""
+print(string,""-"",check(string))
+","1. Initialize an empty stack.
+2. Iterate i from 0 to length(expression).
+    a. Store the current character in a variable ‘ch’.
+    b. If stack is empty: Push ‘ch’ to the stack
+    c. Else if current character is a closing bracket and of the top of the stack contains an opening bracket of the same type
+    Remove the top of the stack: Else, push ‘ch’ to the stack
+3. If the stack is empty, return true, else false."
+83,"# Python3 code to Check for
+# balanced parentheses in an expression
+def check(expression):
+        
+        open_tup = tuple('({[')
+        close_tup = tuple(')}]')
+        map = dict(zip(open_tup, close_tup))
+        queue = []
+
+        for i in expression:
+                if i in open_tup:
+                        queue.append(map[i])
+                elif i in close_tup:
+                        if not queue or i != queue.pop():
+                                return ""Unbalanced""
+        if not queue:
+                return ""Balanced""
+        else:
+                return ""Unbalanced""
+
+# Driver code
+string = ""{[]{()}}""
+print(string, ""-"", check(string))
+
+string = ""((()""
+print(string,""-"",check(string))
+","1. Initialize an empty stack.
+2. Iterate i from 0 to length(expression).
+    a. Store the current character in a variable ‘ch’.
+    b. If stack is empty: Push ‘ch’ to the stack
+    c. Else if current character is a closing bracket and of the top of the stack contains an opening bracket of the same type
+    Remove the top of the stack: Else, push ‘ch’ to the stack
+3. If the stack is empty, return true, else false."
+84,"# Python3 code to Check for
+# balanced parentheses in an expression
+def check(my_string):
+        brackets = ['()', '{}', '[]']
+        while any(x in my_string for x in brackets):
+                for br in brackets:
+                        my_string = my_string.replace(br, '')
+        return not my_string
+
+# Driver code
+string = ""{[]{()}}""
+print(string, ""-"", ""Balanced""
+        if check(string) else ""Unbalanced"")
+","1. Initialize an empty stack.
+2. Iterate i from 0 to length(expression).
+    a. Store the current character in a variable ‘ch’.
+    b. If stack is empty: Push ‘ch’ to the stack
+    c. Else if current character is a closing bracket and of the top of the stack contains an opening bracket of the same type
+    Remove the top of the stack: Else, push ‘ch’ to the stack
+3. If the stack is empty, return true, else false."
+85,"# Python3 program to remove consecutive
+# same words
+
+# Function to find the size of
+# manipulated sequence
+def removeConsecutiveSame(v):
+
+        n = len(v)
+
+        # Start traversing the sequence
+        i = 0
+        while(i < n - 1):
+                
+                # Compare the current string with
+                # next one Erase both if equal
+                if ((i + 1) < len(v)) and (v[i] == v[i + 1]):
+                
+                        # Erase function delete the element and
+                        # also shifts other element that's why
+                        # i is not updated
+                        v = v[:i]
+                        v = v[:i]
+
+                        # Update i, as to check from previous
+                        # element again
+                        if (i > 0):
+                                i -= 1
+
+                        # Reduce sequence size
+                        n = n - 2
+                
+                # Increment i, if not equal
+                else:
+                        i += 1
+        
+        # Return modified size
+        return len(v[:i - 1])
+        
+# Driver Code
+if __name__ == '__main__':
+        v = [""tom"", ""jerry"", ""jerry"", ""tom""]
+        print(removeConsecutiveSame(v))
+        
+# This code is contributed by SHUBHAMSINGH10
+","1- Start traversing the sequence by storing it in vector.
+  a) Check if the current string is equal to next string
+     if yes, erase both from the vector.
+  b) And check the same till last.
+2- Return vector size."
+86,"# Python implementation of above method
+
+# Function to find the size of manipulated sequence
+def removeConsecutiveSame(v):
+        st = []
+
+        # Start traversing the sequence
+        for i in range(len(v)):
+                
+                # Push the current string if the stack
+                # is empty
+                if (len(st) == 0):
+                        st.append(v[i])
+                else:
+                        Str = st[-1]
+
+                        # compare the current string with stack top
+                        # if equal, pop the top
+                        if (Str == v[i]):
+                                st.pop()
+
+                        # Otherwise push the current string
+                        else:
+                                st.append(v[i])
+
+        # Return stack size
+        return len(st)
+
+# Driver code
+if __name__ == '__main__':
+        V = [ ""ab"", ""aa"", ""aa"", ""bcd"", ""ab""]
+        print(removeConsecutiveSame(V))
+
+# This code is contributed by PranchalK.
+","1- Start traversing the strings and push into stack.
+    a) Check if the current string is same as the string
+       at the top of the stack
+        i) If yes, pop the string from top.
+        ii) Else push the current string.
+2- Return stack size if the whole sequence is traversed."
+87,"# Function to print element and NGE pair for all elements of list
+def printNGE(arr):
+
+        for i in range(0, len(arr), 1):
+
+                next = -1
+                for j in range(i+1, len(arr), 1):
+                        if arr[i] < arr[j]:
+                                next = arr[j]
+                                break
+
+                print(str(arr[i]) + "" -- "" + str(next))
+
+
+# Driver program to test above function
+arr = [11, 13, 21, 3]
+printNGE(arr)
+
+# This code is contributed by Sunny Karira
+","1. Traverse the array from index 0 to end.
+2. For each element start another loop from index i+1 to end.
+3. If a greater element is found in the second loop then print it and break the loop, else print -1.                "
+88,"# Python program to print next greater element using stack
+
+# Stack Functions to be used by printNGE()
+
+
+def createStack():
+        stack = []
+        return stack
+
+
+def isEmpty(stack):
+        return len(stack) == 0
+
+
+def push(stack, x):
+        stack.append(x)
+
+
+def pop(stack):
+        if isEmpty(stack):
+                print(""Error : stack underflow"")
+        else:
+                return stack.pop()
+
+
+'''prints element and NGE pair for all elements of
+arr[] '''
+
+
+def printNGE(arr):
+        s = createStack()
+        element = 0
+        next = 0
+
+        # push the first element to stack
+        push(s, arr[0])
+
+        # iterate for rest of the elements
+        for i in range(1, len(arr), 1):
+                next = arr[i]
+
+                if isEmpty(s) == False:
+
+                        # if stack is not empty, then pop an element from stack
+                        element = pop(s)
+
+                        '''If the popped element is smaller than next, then
+                                a) print the pair
+                                b) keep popping while elements are smaller and
+                                stack is not empty '''
+                        while element < next:
+                                print(str(element) + "" -- "" + str(next))
+                                if isEmpty(s) == True:
+                                        break
+                                element = pop(s)
+
+                        '''If element is greater than next, then push
+                        the element back '''
+                        if element > next:
+                                push(s, element)
+
+                '''push next to stack so that we can find
+                next greater for it '''
+                push(s, next)
+
+        '''After iterating over the loop, the remaining
+        elements in stack do not have the next greater
+        element, so print -1 for them '''
+
+        while isEmpty(s) == False:
+                element = pop(s)
+                next = -1
+                print(str(element) + "" -- "" + str(next))
+
+
+# Driver code
+arr = [11, 13, 21, 3]
+printNGE(arr)
+
+# This code is contributed by Sunny Karira
+","1. Push the first element to stack.
+2. Pick the rest of the elements one by one and follow the following steps in the loop. 
+3. Mark the current element as next.
+    a. If the stack is not empty, compare top most element of stack with next.
+    b. If next is greater than the top element, Pop element from the stack. next is the next greater element for the popped element.
+    c. Keep popping from the stack while the popped element is smaller than next. next becomes the next greater element for all such popped elements.
+    d. Finally, push the next in the stack.
+4. After the loop in step 2 is over, pop all the elements from the stack and print -1 as the next element for them.           "
+89,"# Python3 code
+class Solution:
+        def nextLargerElement(self, arr, n):
+                # code here
+                s = []
+                for i in range(len(arr)):
+                        while s and s[-1].get(""value"") < arr[i]:
+                                d = s.pop()
+                                arr[d.get(""ind"")] = arr[i]
+                        s.append({""value"": arr[i], ""ind"": i})
+                while s:
+                        d = s.pop()
+                        arr[d.get(""ind"")] = -1
+                return arr
+
+
+if __name__ == ""__main__"":
+        print(Solution().nextLargerElement([6, 8, 0, 1, 3], 5))
+","1. The array elements are pushed into the stack until it finds a greatest element in the right of array. In other words the elements are popped from stack when top of the stack value is smaller in the current array element.
+2. Once all the elements are processed in the array but stack is not empty. The left out elements in the stack doesn’t encounter any greatest element . So pop the element from stack and change it’s index value as -1 in the array."
+90,"class Solution:
+        def nextLargerElement(self, arr, n):
+                # Initialize a list to store the next greater elements.
+                v = [-1] * n
+
+                # Initialize a variable to keep track of the maximum element seen so far.
+                mx = arr[n-1]
+
+                # Iterate over the array from right to left.
+                for i in range(n-2, -1, -1):
+                        # If the element to the right is greater than the current element,
+                        # then the next greater element for the current element is the element to the right.
+                        if arr[i+1] > arr[i]:
+                                v[i] = arr[i+1]
+                        else:
+                                # If the next greater element for the element to the right is greater than the current element,
+                                # then the next greater element for the current element is the next greater element for the element to the right.
+                                if v[i+1] > arr[i]:
+                                        v[i] = v[i+1]
+                                elif mx > arr[i]:
+                                        # If there is no next greater element to the right that is greater than the current element,
+                                        # then we need to find the next greater element that is greater than the current element and to its right.
+                                        # Initialize a variable to keep track of the index of the next greater element.
+                                        k = i+1
+                                        # Iterate over the array from the current element to its right to find the next greater element.
+                                        while arr[k] <= arr[i]:
+                                                k += 1
+                                        v[i] = arr[k]
+                                else:
+                                        # If there is no next greater element to the right that is greater than the current element
+                                        # and there is no next greater element to the right that is greater than the next greater element for the current element,
+                                        # then there is no next greater element for the current element.
+                                        v[i] = -1
+                        # Update the maximum element seen so far.
+                        mx = max(arr[i], mx)
+
+                # Return the list containing the next greater elements.
+                return v
+
+
+# Input array
+arr = [3, 8, 4, 1, 2, 6, 7, 2]
+n = len(arr)
+
+# Create an instance of the Solution class
+sol = Solution()
+
+# Call the nextLargerElement function
+result = sol.nextLargerElement(arr, n)
+
+# Print the result
+print ""For the input array [3, 8, 4, 1, 2, 6, 7, 2], the next greater elements are: "",
+for i in range(n):
+        print result[i],
+print
+","1. Initialize an output array v with -1 as the initial value for each element.
+2. Set the maximum element seen so far (mx) to be the last element of the input array.
+3. Traverse the input array from right to left.
+4. For each element arr[i], if the next element arr[i+1] is greater than arr[i], then set v[i] to arr[i+1] since arr[i+1] is the next greater element for arr[i].
+5. If arr[i+1] is not greater than arr[i], then check v[i+1]. If v[i+1] is greater than arr[i], then set v[i] to v[i+1] since v[i+1] is the next greater element for arr[i].
+6. If v[i+1] is not greater than arr[i], then check the maximum element seen so far (mx). If mx is greater than arr[i], then traverse the subarray to the right of arr[i] until an element greater than arr[i] is found. Set v[i] to that element. If no such element is found, set v[i] to -1.
+7. If mx is not greater than arr[i], set v[i] to -1.
+8. Update the maximum element seen so far (mx) to be the maximum of arr[i] and mx.
+9. Return the output array v."
+91,"# your code goes here
+def removeDuplicates(s):
+    st = []
+
+    for i in range(len(s)):
+    
+        if len(st)==0:
+            st.append(s[i])
+        else:
+    
+            if st[-1] == s[i]:
+                st.pop()
+            else:
+                st.append(s[i])
+    
+    ans = """"
+    
+    while st:
+        ans = ans + st[-1]
+        st.pop()
+    
+    ans = ans[::-1]
+    return ans
+
+s = input()
+s = removeDuplicates(s)
+print(s)","1. This is the standard stack problem.Let’s see how stack works here.
+
+2. Iterate through the string from left to right,if stack is empty put the current character onto the stack.
+
+3. Else check if the top of the stack equals the current element then pop the top element from the stack, if not push the current element.
+
+4. In this way we are exploiting the LIFO property of the stack.Now add the contents of the stack onto new string and reverse it to preserve the order.Below solution explains it better."
+92,"class MinStack(object):
+   min=float('inf')
+   def __init__(self):
+      self.min=float('inf')
+      self.stack = []
+   def push(self, x):
+      if x<=self.min:
+         self.stack.append(self.min)
+         self.min = x
+      self.stack.append(x)
+   def pop(self):
+      t = self.stack[-1]
+      self.stack.pop()
+      if self.min == t:
+         self.min = self.stack[-1]
+         self.stack.pop()
+   def top(self):
+      return self.stack[-1]
+   def getMin(self):
+      return self.min
+m = MinStack()
+m.push(-2)
+m.push(0)
+m.push(-3)
+print(m.getMin())
+m.pop()
+print(m.top())
+print(m.getMin())","1. Initialize the stack by min element as infinity
+2. For push operation push(x)
+    a. if x < min, then update min := x,
+    b. push x into stack
+3. For pop operation pop()
+    a. t := top element
+    b. delete t from stack
+    c. if t is min, then min := top element of the stack
+4. For top operation top()
+    a. simply return the top element
+5. for getMin operation getMin()
+    a. return the min element"
+93,"# Python program to sort a
+# stack using auxiliary stack.
+
+# This function return the sorted stack
+def sortStack ( stack ):
+        tmpStack = createStack()
+        while(isEmpty(stack) == False):
+                
+                # pop out the first element
+                tmp = top(stack)
+                pop(stack)
+
+                # while temporary stack is not
+                # empty and top of stack is
+                # greater than temp
+                while(isEmpty(tmpStack) == False and
+                        int(top(tmpStack)) > int(tmp)):
+                        
+                        # pop from temporary stack and
+                        # push it to the input stack
+                        push(stack,top(tmpStack))
+                        pop(tmpStack)
+
+                # push temp in temporary of stack
+                push(tmpStack,tmp)
+        
+        return tmpStack
+
+# Below is a complete running
+# program for testing above
+# function.
+
+# Function to create a stack.
+# It initializes size of stack
+# as 0
+def createStack():
+        stack = []
+        return stack
+
+# Function to check if
+# the stack is empty
+def isEmpty( stack ):
+        return len(stack) == 0
+
+# Function to push an
+# item to stack
+def push( stack, item ):
+        stack.append( item )
+
+# Function to get top
+# item of stack
+def top( stack ):
+        p = len(stack)
+        return stack[p-1]
+
+# Function to pop an
+# item from stack
+def pop( stack ):
+
+        # If stack is empty
+        # then error
+        if(isEmpty( stack )):
+                print(""Stack Underflow "")
+                exit(1)
+
+        return stack.pop()
+
+# Function to print the stack
+def prints(stack):
+        for i in range(len(stack)-1, -1, -1):
+                print(stack[i], end = ' ')
+        print()
+
+# Driver Code
+stack = createStack()
+push( stack, str(34) )
+push( stack, str(3) )
+push( stack, str(31) )
+push( stack, str(98) )
+push( stack, str(92) )
+push( stack, str(23) )
+
+print(""Sorted numbers are: "")
+sortedst = sortStack ( stack )
+prints(sortedst)
+
+# This code is contributed by
+# Prasad Kshirsagar
+","1. Create a temporary stack say tmpStack.
+2. While input stack is NOT empty do this: 
+    a. Pop an element from input stack call it temp
+    b. while temporary stack is NOT empty and top of temporary stack is greater than temp, 
+        pop from temporary stack and push it to the input stack
+    c. push temp in temporary stack
+3. The sorted numbers are in tmpStack"
+94,"# Python program to sort a stack using recursion
+
+# Recursive method to insert element in sorted way
+
+
+def sortedInsert(s, element):
+
+        # Base case: Either stack is empty or newly inserted
+        # item is greater than top (more than all existing)
+        if len(s) == 0 or element > s[-1]:
+                s.append(element)
+                return
+        else:
+
+                # Remove the top item and recur
+                temp = s.pop()
+                sortedInsert(s, element)
+
+                # Put back the top item removed earlier
+                s.append(temp)
+
+# Method to sort stack
+
+
+def sortStack(s):
+
+        # If stack is not empty
+        if len(s) != 0:
+
+                # Remove the top item
+                temp = s.pop()
+
+                # Sort remaining stack
+                sortStack(s)
+
+                # Push the top item back in sorted stack
+                sortedInsert(s, temp)
+
+# Printing contents of stack
+
+
+def printStack(s):
+        for i in s[::-1]:
+                print(i, end="" "")
+        print()
+
+
+# Driver Code
+if __name__ == '__main__':
+        s = []
+        s.append(30)
+        s.append(-5)
+        s.append(18)
+        s.append(14)
+        s.append(-3)
+
+        print(""Stack elements before sorting: "")
+        printStack(s)
+
+        sortStack(s)
+
+        print(""\nStack elements after sorting: "")
+        printStack(s)
+
+# This code is contributed by Muskan Kalra.
+","1. Create a stack and push all the elements in it.
+2. Call sortStack(), which will pop an element from the stack and pass the popped element to function sortInserted(), then it will keep calling itself until the stack is empty.
+3. Whenever sortInserted() is called it will insert the passed element in stack in sorted order.
+4. Print the stack"
+95,"# Function to sort a stack using recursion
+def sortStack(s):
+        # If the stack is empty, return
+        if not s:
+                return
+
+        # Remove the top element of the stack
+        x = s.pop()
+
+        # Sort the remaining elements in the stack using recursion
+        sortStack(s)
+
+        # Create two auxiliary stacks
+        tempStack = []
+
+        # Move all elements that are greater than x from the main stack to the tempStack
+        while s and s[-1] > x:
+                tempStack.append(s.pop())
+
+        # Push x back into the main stack
+        s.append(x)
+
+        # Move all elements from tempStack back to the main stack
+        while tempStack:
+                s.append(tempStack.pop())
+
+# Create a stack
+s = []
+
+# Push elements into the stack
+s.append(34)
+s.append(3)
+s.append(31)
+s.append(98)
+s.append(92)
+s.append(23)
+
+# Sort the stack
+sortStack(s)
+
+# Print the sorted elements
+print(""Sorted numbers are: "", end="""")
+while s:
+        print(s.pop(), end="" "")
+","1. Create a stack and push all the elements in it.
+2. Call sortStack(), which will pop an element from the stack and pass the popped element to function sortInserted(), then it will keep calling itself until the stack is empty.
+3. Whenever sortInserted() is called it will insert the passed element in stack in sorted order.
+4. Print the stack"
+96,"# Python3 program to sort an array using stack
+
+# This function return the sorted stack
+def sortStack(input):
+        tmpStack = []
+        while (len(input) > 0):
+        
+                # pop out the first element
+                tmp = input[-1]
+                input.pop()
+
+                # while temporary stack is not empty
+                # and top of stack is smaller than temp
+                while (len(tmpStack) > 0 and tmpStack[-1] < tmp):
+                
+                        # pop from temporary stack and
+                        # append it to the input stack
+                        input.append(tmpStack[-1])
+                        tmpStack.pop()
+                
+                # append temp in temporary of stack
+                tmpStack.append(tmp)
+        
+        return tmpStack
+
+def sortArrayUsingStacks(arr, n):
+
+        # append array elements to stack
+        input = []
+        i = 0
+        while ( i < n ):
+                input.append(arr[i])
+                i = i + 1
+                
+        # Sort the temporary stack
+        tmpStack = sortStack(input)
+        i = 0
+        
+        # Put stack elements in arrp[]
+        while (i < n):
+                arr[i] = tmpStack[-1]
+                tmpStack.pop()
+                i = i + 1
+                
+        return arr
+
+# Driver code
+arr = [10, 5, 15, 45]
+n = len(arr)
+
+arr = sortArrayUsingStacks(arr, n)
+i = 0
+
+while (i < n):
+        print(arr[i] ,end= "" "")
+        i = i + 1
+
+# This code is contributed by Arnab Kundu
+","1. Create a recursive insert function that inserts a number into the stack at the right positions so as to maintain monotonically decreasing property . Working of insert method is below
+    a. If the stack is empty or top of stack is greater than the current number than push it into the stack and return
+    b. Else pop the top of the stack and store it into a variable x and call the insert function recursively
+    c. At the end of the current call , insert x back into the stack
+2. Traverse the array from left to right , and insert every element into the monotonic stack using the insert method we have discussed above . At the end of the traversal we will get a monotonic decreasing stack .
+
+3. Now pop each element from the stack and store them into the array from left to right . The array will be sorted in increasing order ."
+97,"# Python3 program to find infix for
+# a given postfix.
+def isOperand(x):
+        return ((x >= 'a' and x <= 'z') or
+                        (x >= 'A' and x <= 'Z'))
+
+# Get Infix for a given postfix
+# expression
+def getInfix(exp) :
+
+        s = []
+
+        for i in exp:        
+                
+                # Push operands
+                if (isOperand(i)) :                
+                        s.insert(0, i)
+                        
+                # We assume that input is a
+                # valid postfix and expect
+                # an operator.
+                else:
+                
+                        op1 = s[0]
+                        s.pop(0)
+                        op2 = s[0]
+                        s.pop(0)
+                        s.insert(0, ""("" + op2 + i +
+                                                        op1 + "")"")
+                        
+        # There must be a single element in
+        # stack now which is the required
+        # infix.
+        return s[0]
+
+# Driver Code
+if __name__ == '__main__':
+
+        exp = ""ab*c+""
+        print(getInfix(exp.strip()))
+
+# This code is contributed by
+# Shubham Singh(SHUBHAMSINGH10)
+","1.While there are input symbol left 
+…1.1 Read the next symbol from the input. 
+2.If the symbol is an operand 
+…2.1 Push it onto the stack. 
+3.Otherwise, 
+…3.1 the symbol is an operator. 
+…3.2 Pop the top 2 values from the stack. 
+…3.3 Put the operator, with the values as arguments and form a string. 
+…3.4 Push the resulted string back to stack. 
+4.If there is only one value in the stack 
+…4.1 That value in the stack is the desired infix string. 
+Below is the implementation of above approach: "
+98,"class Stack():
+    def __init__(self):
+        self.size = 0
+        self.content = list()
+    def is_empty(self):
+        return not bool(self.content)
+    def push(self,elem):
+        self.content.append(elem)
+        self.size = len(self.content)-1
+    def pop_(self):
+        if not self.is_empty():
+
+            elem = self.content.pop()
+            size = len(self.content)-1
+            return elem
+        else:
+            return None
+    def peek(self):
+        if not self.is_empty():
+            return self.content[-1]
+        else:
+            return None
+    def display(self):
+        if not self.is_empty():
+            return self.content
+        else:
+            return None
+def post_to_in(entry):
+    changer = Stack()
+    for k in entry:
+        if k.isalpha():
+            changer.push(k)
+        elif k in ['+','-','*','/','^']:
+            b = changer.pop_()
+            a = changer.pop_()
+            add_str = '('+a+k+b+')'
+            changer.push(add_str)
+        changer.display()    
+    return changer.pop_()","1.While there are input symbol left 
+…1.1 Read the next symbol from the input. 
+2.If the symbol is an operand 
+…2.1 Push it onto the stack. 
+3.Otherwise, 
+…3.1 the symbol is an operator. 
+…3.2 Pop the top 2 values from the stack. 
+…3.3 Put the operator, with the values as arguments and form a string. 
+…3.4 Push the resulted string back to stack. 
+4.If there is only one value in the stack 
+…4.1 That value in the stack is the desired infix string. 
+Below is the implementation of above approach: "
+99,"# Recursive Python function to solve the tower of hanoi
+
+def TowerOfHanoi(n , source, destination, auxiliary):
+        if n==1:
+                print (""Move disk 1 from source"",source,""to destination"",destination)
+                return
+        TowerOfHanoi(n-1, source, auxiliary, destination)
+        print (""Move disk"",n,""from source"",source,""to destination"",destination)
+        TowerOfHanoi(n-1, auxiliary, destination, source)
+                
+# Driver code
+n = 4
+TowerOfHanoi(n,'A','B','C')
+# A, C, B are the name of rods
+
+# Contributed By Dilip Jain
+","1. Function f() (e.g. hanoi(n,start,end)) outputs a sequence of steps to move n disks from the start rod to the end rod.
+2. Show f(1) works => Base case.
+3. Assume f(n-1) works .
+4. Show f(1) works using f(n-1)."
+100,"# Python3 program for iterative Tower of Hanoi
+import sys
+
+# A structure to represent a stack
+class Stack:
+        # Constructor to set the data of
+        # the newly created tree node
+        def __init__(self, capacity):
+                self.capacity = capacity
+                self.top = -1
+                self.array = [0]*capacity
+
+# function to create a stack of given capacity.
+def createStack(capacity):
+        stack = Stack(capacity)
+        return stack
+
+# Stack is full when top is equal to the last index
+def isFull(stack):
+        return (stack.top == (stack.capacity - 1))
+
+# Stack is empty when top is equal to -1
+def isEmpty(stack):
+        return (stack.top == -1)
+
+# Function to add an item to stack.
+# It increases top by 1
+def push(stack, item):
+        if(isFull(stack)):
+                return
+        stack.top+=1
+        stack.array[stack.top] = item
+
+# Function to remove an item from stack.
+# It decreases top by 1
+def Pop(stack):
+        if(isEmpty(stack)):
+                return -sys.maxsize
+        Top = stack.top
+        stack.top-=1
+        return stack.array[Top]
+
+# Function to implement legal
+# movement between two poles
+def moveDisksBetweenTwoPoles(src, dest, s, d):
+        pole1TopDisk = Pop(src)
+        pole2TopDisk = Pop(dest)
+
+        # When pole 1 is empty
+        if (pole1TopDisk == -sys.maxsize):
+                push(src, pole2TopDisk)
+                moveDisk(d, s, pole2TopDisk)
+        
+        # When pole2 pole is empty
+        else if (pole2TopDisk == -sys.maxsize):
+                push(dest, pole1TopDisk)
+                moveDisk(s, d, pole1TopDisk)
+        
+        # When top disk of pole1 > top disk of pole2
+        else if (pole1TopDisk > pole2TopDisk):
+                push(src, pole1TopDisk)
+                push(src, pole2TopDisk)
+                moveDisk(d, s, pole2TopDisk)
+        
+        # When top disk of pole1 < top disk of pole2
+        else:
+                push(dest, pole2TopDisk)
+                push(dest, pole1TopDisk)
+                moveDisk(s, d, pole1TopDisk)
+
+# Function to show the movement of disks
+def moveDisk(fromPeg, toPeg, disk):
+        print(""Move the disk"", disk, ""from '"", fromPeg, ""' to '"", toPeg, ""'"")
+
+# Function to implement TOH puzzle
+def tohIterative(num_of_disks, src, aux, dest):
+        s, d, a = 'S', 'D', 'A'
+
+        # If number of disks is even, then interchange
+        # destination pole and auxiliary pole
+        if (num_of_disks % 2 == 0):
+                temp = d
+                d = a
+                a = temp
+        total_num_of_moves = int(pow(2, num_of_disks) - 1)
+
+        # Larger disks will be pushed first
+        for i in range(num_of_disks, 0, -1):
+                push(src, i)
+
+        for i in range(1, total_num_of_moves + 1):
+                if (i % 3 == 1):
+                        moveDisksBetweenTwoPoles(src, dest, s, d)
+
+                else if (i % 3 == 2):
+                        moveDisksBetweenTwoPoles(src, aux, s, a)
+
+                else if (i % 3 == 0):
+                        moveDisksBetweenTwoPoles(aux, dest, a, d)
+
+# Input: number of disks
+num_of_disks = 3
+
+# Create three stacks of size 'num_of_disks'
+# to hold the disks
+src = createStack(num_of_disks)
+dest = createStack(num_of_disks)
+aux = createStack(num_of_disks)
+
+tohIterative(num_of_disks, src, aux, dest)
+
+# This code is contributed by divyeshrabadiya07.
+","1. Calculate the total number of moves required i.e. ""pow(2, n)
+   - 1"" here n is number of disks.
+2. If number of disks (i.e. n) is even then interchange destination 
+   pole and auxiliary pole.
+3. for i = 1 to total number of moves:
+     if i%3 == 1:
+    legal movement of top disk between source pole and 
+        destination pole
+     if i%3 == 2:
+    legal movement top disk between source pole and 
+        auxiliary pole    
+     if i%3 == 0:
+        legal movement top disk between auxiliary pole 
+        and destination pole "
+101,"def TowerOfHanoi(n , from_rod, to_rod, aux_rod):
+    if n == 1:
+        print(""Move disk 1 from rod"",from_rod,""to rod"",to_rod)
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print(""Move disk"",n,""from rod"",from_rod,""to rod"",to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+         
+
+n = int(input(""Enter the number of disks""))
+TowerOfHanoi(n, 'A', 'C', 'B')","1. Function f() (e.g. hanoi(n,start,end)) outputs a sequence of steps to move n disks from the start rod to the end rod.
+2. Show f(1) works => Base case.
+3. Assume f(n-1) works .
+4. Show f(1) works using f(n-1)."
+102,"def sortby(a, b):
+
+    if (a[0] != b[0]):
+        return a[0] < b[0]
+
+    return (a[1] < b[1])
+
+
+def kOverlap(pairs, k): 
+     
+    vec = [] 
+    for i in range(len(pairs)): 
+
+        vec.append([ pairs[i][0], -1 ])
+        vec.append([ pairs[i][1], +1 ])
+
+    vec.sort()
+    st = [] 
+    for i in range(len(vec)):
+
+        cur = vec[i] 
+        
+        if (cur[1] == -1):
+            st.append(cur) 
+        
+        else:
+            st.pop()
+
+        if (len(st) >= k): 
+            return True 
+
+    return False
+
+
+for _ in range(int(input())):
+
+    n, k =map(int,input().split())
+    pairs = []
+    for i in range(n):
+        pairs.append(list(map(int,input().split())))
+
+    if kOverlap(pairs, k):
+        print(""Yes"")
+    else:
+        print(""No"")","1. Find maximum area for row[0]
+2. For each row in 1 to N – 1
+   a. for each column in that row
+       i. if A[row][column] == 1 then update A[row][column] with A[row][column] += A[row - 1][column]
+    b. find area for that row
+    c. and update maximum area so far"
+103,"# Python3 Program to convert postfix to prefix
+
+# function to check if
+# character is operator or not
+
+
+def isOperator(x):
+
+	if x == ""+"":
+		return True
+
+	if x == ""-"":
+		return True
+
+	if x == ""/"":
+		return True
+
+	if x == ""*"":
+		return True
+
+	return False
+
+# Convert postfix to Prefix expression
+
+
+def postToPre(post_exp):
+
+	s = []
+
+	# length of expression
+	length = len(post_exp)
+
+	# reading from right to left
+	for i in range(length):
+
+		# check if symbol is operator
+		if (isOperator(post_exp[i])):
+
+			# pop two operands from stack
+			op1 = s[-1]
+			s.pop()
+			op2 = s[-1]
+			s.pop()
+
+			# concat the operands and operator
+			temp = post_exp[i] + op2 + op1
+
+			# Push string temp back to stack
+			s.append(temp)
+
+		# if symbol is an operand
+		else:
+
+			# push the operand to the stack
+			s.append(post_exp[i])
+
+	
+	ans = """"
+	for i in s:
+		ans += i
+	return ans
+
+
+# Driver Code
+if __name__ == ""__main__"":
+
+	post_exp = ""AB+CD-""
+	
+	# Function call
+	print(""Prefix : "", postToPre(post_exp))
+
+# This code is contributed by AnkitRai01","1. Read the Postfix expression from left to right
+2. If the symbol is an operand, then push it onto the Stack
+     a. If the symbol is an operator, then pop two operands from the Stack 
+     b. Create a string by concatenating the two operands and the operator before them. 
+          string = operator + operand2 + operand1 
+      c. And push the resultant string back to Stack
+3. Repeat the above steps until end of Postfix expression."
+104,"# your code goes here
+def solve(A):
+
+    mx=0
+    i=0
+    
+    if(len(A)==1):
+        return A[0]
+    
+    s = []
+
+    while(i < len(A)):
+    
+        if(len(s) == 0 or A[s[-1]] <= A[i]):
+    
+            s.append(i)
+            i += 1
+    
+        else:
+    
+            tp=s[-1]
+            s.pop()
+    
+            if not s:
+                res = i
+    
+            else:
+                res = i - s[-1] - 1
+    
+            mxtop=A[tp]*(res)
+    
+            if(mx<mxtop):
+                mx=mxtop
+
+    while s: 
+    
+        tp=s[-1]
+        s.pop()
+    
+        if not s:
+                res = i
+    
+        else:
+            res = i - s[-1] - 1
+    
+        mxtop=A[tp]*(res)
+    
+        if(mx<mxtop):
+            mx=mxtop
+
+    return mx
+
+for _ in range(int(input())):
+    n = int(input())
+    v = list(map(int,input().split()))
+    print(solve(v))","1. Create an empty stack.
+2. Start from first house, and do following for every house ‘house[i]’ where ‘i’ varies from 0 to n-1.
+    a. If stack is empty or house[i] is higher than the house at top of stack, then push ‘i’ to stack.
+    b. If this house is smaller than the top of stack, then keep removing the top of stack while top of the stack is greater. Let the removed bar be house[tp]. Calculate area of rectangle with house[tp] as smallest house. For house[tp], the ‘left index’ is previous (previous to tp) item in stack and ‘right index’ is ‘i’ (current index).
+3. If the stack is not empty, then one by one remove all houses from stack and do step 2.2 for every removed house."
+105,"# The Node class for Linked List
+class Node():
+        def __init__(self,data):
+                
+                self.next = None
+                self.prev = None
+                self.data = data
+
+class Stack():
+        
+        # Initialize stack class with
+        # its head and tail as None
+        def __init__(self):
+                
+                self.head = None
+                self.tail = None
+
+        def push(self, data):
+                
+                new_node = Node(data)
+                
+                if (self.head == None):
+                        self.head = new_node
+                        self.head.next= None
+                        self.head.prev = None
+                        self.tail = new_node
+
+                else:
+                        new_node.prev = self.tail
+                        self.tail.next = new_node
+                        self.tail = new_node
+
+        def pop(self):
+                
+                if (self.head == None):
+                        print(""Stack underflow"")
+
+                if (self.head == self.tail):
+                        self.head = None
+                        self.tail = None
+
+                else:
+                        node = self.tail
+                        self.tail = self.tail.prev
+                        del node
+                        self.tail.next = None
+
+        # self (stack) is linked on top (which is tail here) of stack
+        # self becomes the merged stack
+        def merge(self, stack):
+                if stack.head == None: return # if stack is empty self stays as it is
+                if self.head == None:         # self (stack) is empty -> point to stack
+                        self.head = stack.head
+                        self.tail = stack.tail
+                        return
+                self.head.prev = stack.tail # link self on top of stack
+                stack.tail.nxt = self.head
+                self.head = stack.head         # set new head for self (stack)
+
+        def display(self):
+                
+                if (self.tail != None):
+                        n = self.tail
+                        
+                        while (n != None):
+                                print(n.data, end = "" "")
+                                n = n.prev
+
+                        print()
+
+                else:
+                        print(""Stack Underflow"")
+
+# Driver code
+ms1 = Stack()
+ms2 = Stack()
+
+ms1.push(6)
+ms1.push(5)
+ms1.push(4)
+ms2.push(9)
+ms2.push(8)
+ms2.push(7)
+
+ms1.merge(ms2)
+ms1.display()
+while ms1.head != ms1.tail:
+ms1.pop ()
+print (""check pop all elements until head == tail (one element left)"")
+print (""on merged stack: "", end = """")
+ms1.display()
+# This code is contributed by maheswaripiyush9
+","1. Delete old arrays. 
+2. Create a new array for s1 with a size equal to the size of the old array for s1 plus size of s2. 
+3. Copy old contents of s1 and s2 to new array for s1 "
+106,"# your code goes here
+def kOverlap(pairs, k):
+    
+    vec = []
+    
+    for i in range(len(pairs)):
+        vec.append([pairs[i][0], -1])
+        vec.append([pairs[i][1], 1])
+    
+    vec.sort()
+    st = []
+    
+    for i in range(len(vec)):
+    
+        cur = vec[i]
+    
+        if cur[1] == -1:
+            st.append(cur)
+        else:
+            st.pop()
+    
+        if len(st) >= k:
+            return True
+    
+    return False
+
+for _ in range(int(input())):
+    
+    n, k = map(int,input().split())
+    pairs = []
+    
+    for i in range(n):
+        pairs.append(list(map(int,input().split())))
+    
+    if kOverlap(pairs, k):
+        print(""Yes"")
+    else:
+        print(""No"")","1. The idea is to make a vector of pair and store the starting point for every range as pair in this vector as (starting point, -1) and the ending point as (ending point, 1).
+2. Now, sort the vector then traverse the vector and if the current element is a starting point then push it in a stack and if it is an ending point then pop an element from the stack.
+3. If at any instance of time, the size of the stack is greater than or equal K then print Yes else print No in the end."
+107,"# Python program for the above approach
+
+# Function to find the segment which
+# overlaps with maximum number of segments
+from bisect import bisect_left
+from bisect import bisect_right
+
+def maxIntersection(segments, N):
+        # 'L' & 'R' co-ordinates of all
+        # segments are stored in lvalues & rvalues
+        rvalues = []
+        lvalues = []
+
+        # Assign co-ordinates
+        for i in range(N):
+                lvalues.append(segments[i][0])
+                rvalues.append(segments[i][1])
+
+        # Co-ordinate compression
+        lvalues.sort()
+        rvalues.sort()
+
+        # Stores the required segment
+        answer = [-1, -1]
+
+        # Stores the current maximum
+        # number of intersections
+        numIntersections = 0
+
+        for i in range(N):
+
+                # Find number of 'R' coordinates
+                # which are less than the 'L'
+                # value of the current segment
+                lesser = bisect_left(rvalues, segments[i][0], 0, len(segments))
+
+                # Find number of 'L' coordinates
+                # which are greater than the 'R'
+                # value of the current segment
+                greater = max(
+                        0, N - (bisect_right(lvalues, segments[i][1], 0, len(segments))))
+
+                # Segments excluding 'lesser' and
+                # 'greater' gives the number of
+                # intersections
+                if ((N - lesser - greater) >= numIntersections):
+                        answer = [segments[i][0], segments[i][1]]
+
+                        # Update the current maximum
+                        numIntersections = (N - lesser - greater)
+
+        # Print segment coordinates
+        print(answer[0], answer[1])
+
+
+# Driver Code
+# Given segments
+segments = [[1, 4], [2, 3], [3, 6]]
+
+# Size of segments array
+N = len(segments)
+
+maxIntersection(segments, N)
+
+# The code is contributed by Gautam goel (gautamgoel962)
+","1. It is clear that in a segment [currL, currR], all the ‘R’ values of the remaining segments which are less than ‘currL’ and all the ‘L’ values of the remaining segments which are greater than ‘currR’ will not be counted to the answer.
+2. Store all the ‘R’ values in an array and perform a binary search to find all the ‘R’ values less than ‘currL’ and similarly do this to find all the ‘L’ values greater than ‘currR’.
+3. Traverse the array and update the segment coordinates with the maximum intersection at each iteration.
+4. Print the segment with the maximum intersection."
+108,"# python3 program to Implement a stack
+# using singly linked list
+
+class Node:
+
+        # Class to create nodes of linked list
+        # constructor initializes node automatically
+        def __init__(self, data):
+                self.data = data
+                self.next = None
+
+
+class Stack:
+
+        # head is default NULL
+        def __init__(self):
+                self.head = None
+
+        # Checks if stack is empty
+        def isempty(self):
+                if self.head == None:
+                        return True
+                else:
+                        return False
+
+        # Method to add data to the stack
+        # adds to the start of the stack
+        def push(self, data):
+
+                if self.head == None:
+                        self.head = Node(data)
+
+                else:
+                        newnode = Node(data)
+                        newnode.next = self.head
+                        self.head = newnode
+
+        # Remove element that is the current head (start of the stack)
+        def pop(self):
+
+                if self.isempty():
+                        return None
+
+                else:
+                        # Removes the head node and makes
+                        # the preceding one the new head
+                        poppednode = self.head
+                        self.head = self.head.next
+                        poppednode.next = None
+                        return poppednode.data
+
+        # Returns the head node data
+        def peek(self):
+
+                if self.isempty():
+                        return None
+
+                else:
+                        return self.head.data
+
+        # Prints out the stack
+        def display(self):
+
+                iternode = self.head
+                if self.isempty():
+                        print(""Stack Underflow"")
+
+                else:
+
+                        while(iternode != None):
+
+                                print(iternode.data, end = """")
+                                iternode = iternode.next
+                                if(iternode != None):
+                                        print("" -> "", end = """")
+                        return
+
+
+# Driver code
+if __name__ == ""__main__"":
+MyStack = Stack()
+
+MyStack.push(11)
+MyStack.push(22)
+MyStack.push(33)
+MyStack.push(44)
+
+# Display stack elements
+MyStack.display()
+
+# Print top element of stack
+print(""\nTop element is "", MyStack.peek())
+
+# Delete top elements of stack
+MyStack.pop()
+MyStack.pop()
+
+# Display stack elements
+MyStack.display()
+
+# Print top element of stack
+print(""\nTop element is "", MyStack.peek())
+
+# This code is contributed by Mathew George
+","1. Initialise a node
+2. Update the value of that node by data i.e. node->data = data
+3. Now link this node to the top of the linked list
+4. And update top pointer to the current node
+5. First Check whether there is any node present in the linked list or not, if not then return
+6. Otherwise make pointer let say temp to the top node and move forward the top node by 1 step
+7. Now free this temp node
+8. Take a temp node and initialize it with top pointer 
+9. Now start traversing temp till it encounters NULL
+10. Simultaneously print the value of the temp node"
+109,"# Python3 code to find largest three
+# elements in an array
+import sys
+
+# Function to print three largest
+# elements
+def print3largest(arr, arr_size):
+
+        # There should be atleast three
+        # elements
+        if (arr_size < 3):
+        
+                print("" Invalid Input "")
+                return
+        
+        third = first = second = -sys.maxsize
+        
+        for i in range(0, arr_size):
+        
+                # If current element is greater
+                # than first
+                if (arr[i] > first):
+                
+                        third = second
+                        second = first
+                        first = arr[i]
+                
+
+                # If arr[i] is in between first
+                # and second then update second
+                elif (arr[i] > second):
+                
+                        third = second
+                        second = arr[i]
+                
+                elif (arr[i] > third):
+                        third = arr[i]
+        
+        print(""Three largest elements are"",
+                                first, second, third)
+
+# Driver program to test above function
+arr = [12, 13, 1, 10, 34, 1]
+n = len(arr)
+print3largest(arr, n)
+
+# This code is contributed by Smitha Dinesh Semwal
+# and edited by Ayush Singla(@ayusin51).
+","1) Initialize the largest three elements as minus infinite.
+    first = second = third = -∞
+
+2) Iterate through all elements of array.
+   a) Let current array element be x.
+   b) If (x > first)
+      {
+          // This order of assignment is important
+          third = second
+          second = first
+          first = x   
+       }
+   c)  Else if (x > second and x != first)
+      {
+          third = second
+          second = x 
+      }
+   d)  Else if (x > third and x != second)
+      {
+          third = x  
+      }
+
+3) Print first, second and third."
+110,"# Python3 code to find largest
+# three elements in an array
+def find3largest(arr, n):
+        arr = sorted(arr) # It uses Tuned Quicksort with
+                                        # avg. case Time complexity = O(nLogn)
+
+        check = 0
+        count = 1
+
+        for i in range(1, n + 1):
+
+                if(count < 4):
+                        if(check != arr[n - i]):
+                                
+                                # to handle duplicate values
+                                print(arr[n - i], end = "" "")
+                                check = arr[n - i]
+                                count += 1
+                else:
+                        break
+
+# Driver code
+arr = [12, 45, 1, -1, 45,
+        54, 23, 5, 0, -10]
+n = len(arr)
+find3largest(arr, n)
+
+# This code is contributed by mohit kumar
+","1) Initialize the largest three elements as minus infinite.
+    first = second = third = -∞
+
+2) Iterate through all elements of array.
+   a) Let current array element be x.
+   b) If (x > first)
+      {
+          // This order of assignment is important
+          third = second
+          second = first
+          first = x   
+       }
+   c)  Else if (x > second and x != first)
+      {
+          third = second
+          second = x 
+      }
+   d)  Else if (x > third and x != second)
+      {
+          third = x  
+      }
+
+3) Print first, second and third."
+111,"# Python program to implement
+# the above approach
+
+# Driver Code
+V = [ 11, 65, 193, 36, 209, 664, 32 ];
+V.sort()
+V.reverse()
+
+print(f""first = {V[0]}"");
+print(f""second = {V[1]}"");
+print(f""third = {V[2]}"");
+        
+# This code is contributed by Saurabh Jaiswal
+","1) Initialize the largest three elements as minus infinite.
+    first = second = third = -∞
+
+2) Iterate through all elements of array.
+   a) Let current array element be x.
+   b) If (x > first)
+      {
+          // This order of assignment is important
+          third = second
+          second = first
+          first = x   
+       }
+   c)  Else if (x > second and x != first)
+      {
+          third = second
+          second = x 
+      }
+   d)  Else if (x > third and x != second)
+      {
+          third = x  
+      }
+
+3) Print first, second and third."
+112,"# Python3 program to find
+# three element from different
+# three arrays such that
+# a + b + c is equal to
+# given sum
+
+# Function to check if there
+# is an element from each
+# array such that sum of the
+# three elements is equal to
+# given sum.
+def findTriplet(a1, a2, a3,
+                                n1, n2, n3, sum):
+
+        for i in range(0 , n1):
+                for j in range(0 , n2):
+                        for k in range(0 , n3):
+                                if (a1[i] + a2[j] +
+                                        a3[k] == sum):
+                                        return True
+
+        return False
+
+# Driver Code
+a1 = [ 1 , 2 , 3 , 4 , 5 ]
+a2 = [ 2 , 3 , 6 , 1 , 2 ]
+a3 = [ 3 , 2 , 4 , 5 , 6 ]
+sum = 9
+n1 = len(a1)
+n2 = len(a2)
+n3 = len(a3)
+print(""Yes"") if findTriplet(a1, a2, a3,
+                                                        n1, n2, n3,
+                                                        sum) else print(""No"")
+
+# This code is contributed
+# by Smitha
+","1. Define a function findTriplet that takes in three integer arrays a1, a2, a3, their respective sizes n1, n2, n3, and the integer variable sum.
+2. Loop through each element of a1, a2, and a3 using three nested for-loops.
+3. If the sum of the current triplet of elements (a1[i], a2[j], a3[k]) is equal to sum, return true.
+4. If no such triplet is found, return false.
+5. In the main function, define three integer arrays a1, a2, a3, and the integer variable sum.
+6. Get the size of each array using sizeof operator and divide it by the size of a single element to get the size of the array in terms of number of elements.
+7. Call the findTriplet function with a1, a2, a3, n1, n2, n3, and sum as arguments.
+8. If the function returns true, print “Yes“. Otherwise, print “No“."
+113,"# Python3 program to find three element
+# from different three arrays such
+# that a + b + c is equal to
+# given sum
+
+# Function to check if there is
+# an element from each array such
+# that sum of the three elements is
+# equal to given sum.
+def findTriplet(a1, a2, a3,
+                                n1, n2, n3, sum):
+
+        # Store elements of first
+        # array in hash
+        s = set()
+
+        # sum last two arrays element
+        # one by one
+        for i in range(n1):
+                s.add(a1[i])
+
+        for i in range(n2):
+                for j in range(n3):
+
+                        # Consider current pair and
+                        # find if there is an element
+                        # in a1[] such that these three
+                        # form a required triplet
+                        if sum - a2[i] - a3[j] in s:
+                                return True
+        return False
+
+# Driver code
+a1 = [1, 2, 3, 4, 5]
+a2 = [2, 3, 6, 1, 2]
+a3 = [3, 24, 5, 6]
+n1 = len(a1)
+n2 = len(a2)
+n3 = len(a3)
+sum = 9
+if findTriplet(a1, a2, a3,
+                        n1, n2, n3, sum) == True:
+        print(""Yes"")
+else:
+        print(""No"")
+
+# This code is contributed by Shrikant13
+","1. Store all elements of first array in hash table
+2. Generate all pairs of elements from two arrays using
+   nested loop. For every pair (a1[i], a2[j]), check if
+   sum - (a1[i] + a2[j]) exists in hash table. If yes
+   return true."
+114,"# Function to check if x is present in the array or not
+def binarysearch(arr, N, x):
+        l = 0
+        r = N - 1
+        while l <= r:
+                mid = (l + r) // 2
+                # Checking if the middle element is equal to x
+                if arr[mid] == x:
+                        return True
+                elif arr[mid] < x:
+                        l = mid + 1
+                else:
+                        r = mid - 1
+        # return True, if element x is present in the array
+        # else False
+        return False
+
+# Function to check if such triplet (a + b + c = sum) exists
+def findTriplet(a1, a2, a3, n1, n2, n3, sum):
+        a3.sort() # sort third array(a3) in ascending order for binary search
+        # Iterate each element of array a1
+        for i in range(n1):
+                # Iterate each element of array a2
+                for j in range(n2):
+                        requiredsum = sum - a1[i] - a2[j]
+                        if binarysearch(a3, n3, requiredsum):
+                                return True # return True if Triplet exists
+        return False # return False if Triplet doesn't exist
+
+# Driver code
+if __name__ == '__main__':
+        a1 = [1, 2, 3, 4, 5]
+        a2 = [2, 3, 6, 1, 2]
+        a3 = [3, 2, 4, 5, 6]
+        sum = 9
+        n1 = len(a1)
+        n2 = len(a2)
+        n3 = len(a3)
+        # Function call
+        if findTriplet(a1, a2, a3, n1, n2, n3, sum):
+                print(""YES"") # if Triplet exists, print YES
+        else:
+                print(""NO"") # else NO
+","1. Store all elements of first array in hash table
+2. Generate all pairs of elements from two arrays using
+   nested loop. For every pair (a1[i], a2[j]), check if
+   sum - (a1[i] + a2[j]) exists in hash table. If yes
+   return true."
+115,"class Node: def __init__(self,data): self.data = data;self.next = None;class CreateList: def __init__(self):self.count = 0;self.head = Node(None);self.tail = Node(None);self.head.next = self.tail;self.tail.next = self.head;def add(self,data):newNode = Node(data);if self.head.data is None:self.head = newNode; self.tail = newNode;newNode.next = self.head; else:def countNodes(self):current = self.head; self.count=self.count+1;while(current.next !=self.head):self.count=self.count+1;current = current.next;print(""Count of nodes present in circular linked list: ""),print(self.count); class CircularLinkedList:cl =CreateList();cl.add(1);cl.add(2);cl.add(4);cl.add(1);cl.add(2);cl.add(3);cl.countNodes();","Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: add() and display() .add() will add the node to the list:It first checks whether size is null or head is null; then it will insert the node as the head.Both head and tail will point to a newly added node.If the head is not null, the new node will be the new tail, and the new tail will point to the head as it is a circular linked list.a. countNodes() will count the number of nodes present in the list.Define new node current which will point to the head node.Traverse through the list to count the nodes by making the current node to point to next node in the list till current points to head again."
+116,a = float(input('Enter first side: ')) b = float(input('Enter second side: ')) c = float(input('Enter third side: ')) s = (a + b + c) / 2 area = (s*(s-a)*(s-b)*(s-c)) ** 0.5 print('The area of the triangle is %0.2f' %area),"Start Input base, height Calculate area = 1/2*base*height print ""Area of Triangle="" area End"
+117,"kilometre_1 = float (input (""Please enter the speed of car in Kilometre as a unit: "")) conversion_ratio_1 = 0.621371 miles_1 = kilometre_1 * conversion_ratio_1 print (""The speed value of car in Miles: "", miles_1)","Step 1: We will define the variable for storing the value of kilometre_1 and accepting the input from the user. Step 2: Now, we will define and store the conversion factor into the variable. Step 3: Then, we will define the variable for storing the value of kilometre_1 which is converted into miles. Then in addition we will write the logic of converting kilometre to miles units. Step 4: At last, we will display the converted value by using the print() function."
+118,"celsius_1 = float(input(""Temperature value in degree Celsius: "" )) Fahrenheit_1 = (celsius_1 * 1.8) + 32 print('The %.2f degree Celsius is equal to: %.2f Fahrenheit'%(celsius_1, Fahrenheit_1)) print(""----OR----"") celsius_2 = float (input(""Temperature value in degree Celsius: "" )) Fahrenheit_2 = (celsius_2 * 9/5) + 32 print ('The %.2f degree Celsius is equal to: %.2f Fahrenheit'%(celsius_2, Fahrenheit_2))",Create a variable to store the input celsius degree temperature.Use the mathematical formula f=c*1.8+32 to convert the input celsius degree temperature to Fahrenheit degree temperature.Print the Fahrenheit equivalent of the given input celsius degree temperature.
+119,"num = int(input(""Enter a number: "")) if num < 0: print(""Enter a positive number"") else:sum = 0 while(num > 0): sum += num num -= 1 print(""The sum is"",sum)",Initialize : sum = 0 Run a loop from x = 1 to n and do following in loop. sum = sum + x
+120,"num1 = 12 num2 = 14 for i in range(max(num1, num2), 1 + (num1 * num2)):if i % num1 == i % num2 == 0: lcm = i break print(""LCM of"", num1, ""and"", num2, ""is"", lcm)","1)LCM of two numbers will at least be equal or greater than max(num1, num2)2)Largest possibility of LCM will be num1 * num2"
+121,"num1 = 12
+ num2 = 14
+ for i in range(max(num1, num2), 1 + (num1 * num2), max(num1, num2)):
+  if i % num1 == i % num2 == 0:
+  lcm = i
+  break
+ 
+ print(""LCM of"", num1, ""and"", num2, ""is"", lcm)","Rather than linearly checking for LCM by doing i++. We can do i = i + max
+ Starting with i = max (num1, num2)
+ The next possibility of LCM will be ‘max’ interval apart"
+122,"num1 = 12
+ num2 = 14
+ 
+ # Calculating HCF here
+ for i in range(1, max(num1, num2)):
+  if num1 % i == num2 % i == 0:
+  hcf = i
+ 
+ # LCM formula
+ lcm = (num1*num2)//hcf
+ 
+ print(""LCM of"", num1, ""and"", num2, ""is"", lcm)","Initialize HCF = 1
+ Run a loop in the iteration of (i) between [1, min(num1, num2)]
+ Note down the highest number that divides both num1 & num2
+ If i satisfies (num1 % i == 0 && num2 % i == 0) then new value of HCF is i
+ Use lcm formula :- (num1*num2) / hcf
+ Print the output"
+123,"def getHCF(num1, num2):
+  while num1!=num2:
+  if num1>num2:
+  num1-=num2
+  else:
+  num2-=num1
+  return num1
+ 
+ 
+ num1 = 12
+ num2 = 14
+ 
+ # Calculating HCF here
+ hcf = getHCF(num1, num2)
+ 
+ # LCM formula
+ lcm = (num1*num2)//hcf
+ 
+ print(""LCM of"", num1, ""and"", num2, ""is"", lcm)","Run a while loop until num1 is not equals to num2
+ If num1>num2 then num1 = num1 – num2
+ Else num2 = num2 – num1
+ After the loop ends both num1 & num2 stores HCF
+ Use LCM formula :- (num1*num2) / hcf
+ Print Output"
+124,"def getHCF(num1, num2):
+  # Everything divides 0
+  if num1 == 0 or num2 == 0:
+  return num1 + num2
+ 
+  # base case
+  if num1 == num2:
+  return num1
+ 
+  # num1>num2
+  if num1 > num2:
+  return getHCF(num1 - num2, num2)
+  else:
+  return getHCF(num1, num2 - num1)
+ 
+ 
+ num1 = 12
+ num2 = 14
+ 
+ # Calculating HCF here
+ hcf = getHCF(num1, num2)
+ 
+ # LCM formula
+ lcm = (num1*num2)//hcf
+ 
+ print(""LCM of"", num1, ""and"", num2, ""is"", lcm)","Checked whether any of the input is 0 then return sum of both numbers
+ If both input are equal return any of the two numbers
+ If num1 is greater than the num2 then Recursively call findHCF(num1 – num2, num2)
+ Else Recursively call findHCF(num1, num2-num1)"
+125,"num1 = 36
+ num2 = 60
+ hcf = 1
+ 
+ for i in range(1, min(num1, num2)):
+  if num1 % i == 0 and num2 % i == 0:
+  hcf = i
+ print(""Hcf of"", num1, ""and"", num2, ""is"", hcf)","Initialize HCF = 1
+ Run a loop in the iteration of (i) between [1, min(num1, num2)]
+ Note down the highest number that divides both num1 & num2
+ If i satisfies (num1 % i == 0 and num2 % i == 0) then new value of HCF is i
+ Print value of HCF"
+126,"num1 = 36
+ num2 = 60
+ a = num1
+ b = num2
+ 
+ while num1 != num2:
+  if num1 > num2:
+  num1 -= num2
+  else:
+  num2 -= num1
+ 
+ print(""Hcf of"", a, ""and"", b, ""is"", num1)","Run a while loop until num1 is not equals to num2
+ If num1>num2 then num1 = num1 – num2
+ Else num2 = num2 – num1
+ After the loop ends both num1 & num2 stores HCF"
+127,"def findHCF(num1, num2):
+  
+  # Everything divides 0
+  if num1 == 0 or num2 == 0:
+  return num1 + num2
+  
+  # base case
+  if num1 == num2:
+  return num1
+  
+  # num1>num2
+  if num1 > num2:
+  return findHCF(num1 - num2, num2)
+  else:
+  return findHCF(num1, num2 - num1)
+ 
+ 
+ num1 = 36
+ num2 = 60
+ 
+ print(""Hcf of"", num1, ""and"", num2, ""is"", findHCF(num1, num2))","Checked whether any of the input is 0 then return sum of both numbers
+ If both input are equal return any of the two numbers
+ If num1 is greater than the num2 then Recursively call findHCF(num1 – num2, num2)
+ Else Recursively call findHCF(num1, num2-num1)"
+128,"def getHCF(a, b):
+  return b == 0 and a or getHCF(b, a % b)
+ 
+ 
+ num1 = 36
+ num2 = 60
+ 
+ print(""Hcf of"", num1, ""and"", num2, ""is"", getHCF(num1, num2))","If b is equals to 0 return a
+ Else recursively call the function for value b, a%b and return"
+129,"def getHCF(a, b):
+  return b == 0 and a or getHCF(b, a % b)
+ 
+ 
+ num1 = -36
+ num2 = 60
+ 
+ # if user enters negative number, we just changing it to positive
+ # By definition HCF is the highest positive number that divides both numbers
+ # -36 & 60 : HCF = 12 (as highest num that divides both)
+ # -36 & -60 : HCF = 12 (as highest num that divides both)
+ num1 >= 0 and num1 or -num1
+ num2 >= 0 and num2 or -num2
+ 
+ print(""Hcf of"", num1, ""and"", num2, ""is"", getHCF(num1, num2))","If b is equals to 0 return a
+ Else recursively call the function for value b, a%b and return"
+130,"# Write Python3 code here
+# -*- coding: utf-8 -*-
+
+# Example Input
+s = ""*-A/BC-/AKL""
+
+# Stack for storing operands
+stack = []
+
+operators = set(['+', '-', '*', '/', '^'])
+
+# Reversing the order
+s = s[::-1]
+
+# iterating through individual tokens
+for i in s:
+
+        # if token is operator
+        if i in operators:
+
+                # pop 2 elements from stack
+                a = stack.pop()
+                b = stack.pop()
+
+                # concatenate them as operand1 +
+                # operand2 + operator
+                temp = a+b+i
+                stack.append(temp)
+
+        # else if operand
+        else:
+                stack.append(i)
+
+# printing final output
+print(*stack)
+","1. Read the Prefix expression in reverse order (from right to left)
+2. If the symbol is an operand, then push it onto the Stack
+3. If the symbol is an operator, then pop two operands from the Stack 
+    Create a string by concatenating the two operands and the operator after them. 
+    string = operand1 + operand2 + operator 
+    And push the resultant string back to Stack
+4. Repeat the above steps until end of Prefix expression."
+131,"exp = ""45+98-10""
+stack = []
+i = 0
+while i < len(exp):
+        if exp[i].isdigit():
+                num = int(exp[i])
+                i += 1
+                while i < len(exp) and exp[i].isdigit():
+                        num = num * 10 + int(exp[i])
+                        i += 1
+                stack.append(num)
+        elif exp[i] == ""+"":
+                stack.append(""+"")
+                i += 1
+        elif exp[i] == ""-"":
+                stack.append(""-"")
+                i += 1
+        else:
+                i += 1
+
+result = stack[0]
+for i in range(1, len(stack), 2):
+        if stack[i] == ""+"":
+                result += stack[i+1]
+        else:
+                result -= stack[i+1]
+
+print(""The evaluated result is:"", result)
+","1. Take input of the string containing the expression to be evaluated
+2. Initialize an empty stack
+3. Loop through each character in the string:
+a. If the character is a digit, extract the entire number and push it onto the stack
+b. If the character is an operator, push it onto the stack
+4. While the stack has more than one element:
+a. Pop the top two elements from the stack
+b. If the top element is an operator, apply it to the two popped elements and push the result onto the stack
+c. Otherwise, push the popped elements back onto the stack in the reverse order
+5. The final element left on the stack will be the evaluated result
+6. Display the result"
+132,"import re
+
+def evaluate_expression(expression):
+        # Extract numbers and operators from the expression string
+        elements = re.findall(r'(\d+|\+|\-|\*|\/)', expression)
+
+        # Initialize the result to the first number
+        result = int(elements[0])
+
+        # Apply each operator to the previous result and the current number
+        for i in range(1, len(elements), 2):
+                operator = elements[i]
+                num = int(elements[i+1])
+                if operator == '+':
+                        result += num
+                elif operator == '-':
+                        result -= num
+                elif operator == '*':
+                        result *= num
+                elif operator == '/':
+                        result /= num
+
+        return result
+
+# Test the function
+expression = ""45+98-10""
+print(""The original string is:"", expression)
+print(""The evaluated result is:"", evaluate_expression(expression))
+","1. Import the re module for regular expressions
+2. Use re.findall() to extract all the numbers and operators from the expression string and store them in a list
+3. Use a loop to iterate through the list and evaluate the expression by applying each operator to the previous result and the current number
+4. Return the final result"
+133,"# Class to make a Node
+class Node:
+        #Constructor which assign argument to nade's value
+        def __init__(self, value):
+                self.value = value
+                self.next = None
+
+        # This method returns the string representation of the object.
+        def __str__(self):
+                return ""Node({})"".format(self.value)
+        
+        # __repr__ is same as __str__
+        __repr__ = __str__
+
+
+class Stack:
+        # Stack Constructor initialise top of stack and counter.
+        def __init__(self):
+                self.top = None
+                self.count = 0
+                self.maximum = None
+                
+        #This method returns the string representation of the object (stack).
+        def __str__(self):
+                temp=self.top
+                out=[]
+                while temp:
+                        out.append(str(temp.value))
+                        temp=temp.next
+                out='\n'.join(out)
+                return ('Top {} \n\nStack :\n{}'.format(self.top,out))
+                
+        # __repr__ is same as __str__
+        __repr__=__str__
+        
+        #This method is used to get minimum element of stack
+        def getMax(self):
+                if self.top is None:
+                        return ""Stack is empty""
+                else:
+                        print(""Maximum Element in the stack is: {}"" .format(self.maximum))
+
+
+
+        # Method to check if Stack is Empty or not
+        def isEmpty(self):
+                # If top equals to None then stack is empty
+                if self.top == None:
+                        return True
+                else:
+                # If top not equal to None then stack is empty
+                        return False
+
+        # This method returns length of stack        
+        def __len__(self):
+                self.count = 0
+                tempNode = self.top
+                while tempNode:
+                        tempNode = tempNode.next
+                        self.count+=1
+                return self.count
+
+        # This method returns top of stack        
+        def peek(self):
+                if self.top is None:
+                        print (""Stack is empty"")
+                else:
+                        if self.top.value > self.maximum:
+                                print(""Top Most Element is: {}"" .format(self.maximum))
+                        else:
+                                print(""Top Most Element is: {}"" .format(self.top.value))
+
+        #This method is used to add node to stack
+        def push(self,value):
+                if self.top is None:
+                        self.top = Node(value)
+                        self.maximum = value
+                        
+                elif value > self.maximum :
+                        temp = (2 * value) - self.maximum
+                        new_node = Node(temp)
+                        new_node.next = self.top
+                        self.top = new_node
+                        self.maximum = value
+                else:
+                        new_node = Node(value)
+                        new_node.next = self.top
+                        self.top = new_node
+                print(""Number Inserted: {}"" .format(value))
+
+        #This method is used to pop top of stack
+        def pop(self):
+                if self.top is None:
+                        print( ""Stack is empty"")
+                else:
+                        removedNode = self.top.value
+                        self.top = self.top.next
+                        if removedNode > self.maximum:
+                                print (""Top Most Element Removed :{} "" .format(self.maximum))
+                                self.maximum = ( ( 2 * self.maximum ) - removedNode )
+                        else:
+                                print (""Top Most Element Removed : {}"" .format(removedNode))
+
+                                
+                        
+        
+# Driver program to test above class
+stack = Stack()
+
+stack.push(3)
+stack.push(5)
+stack.getMax()
+stack.push(7)
+stack.push(19)
+stack.getMax()        
+stack.pop()
+stack.getMax()
+stack.pop()
+stack.peek()
+
+# This code is contributed by Blinkii
+","1. If stack is empty, insert x into the stack and make maxEle equal to x.
+2. If stack is not empty, compare x with maxEle. Two cases arise:
+    a. If x is less than or equal to maxEle, simply insert x.
+    b. If x is greater than maxEle, insert (2*x – maxEle) into the stack and make maxEle equal to x. For example, let previous maxEle was 3. Now we want to insert 4. We update maxEle as 4 and insert 2*4 – 3 = 5 into the stack.
+3. Remove element from top. Let the removed element be y. Two cases arise:
+    a. If y is less than or equal to maxEle, the maximum element in the stack is still maxEle.
+    b. If y is greater than maxEle, the maximum element now becomes (2*maxEle – y), so update (maxEle = 2*maxEle – y). This is where we retrieve previous maximum from current maximum and its value in stack. For example, let the element to be removed be 5 and maxEle be 4. We remove 5 and update maxEle as 2*4 – 5 = 3.]"
+134,"# Python3 program to implement Queue using
+# two stacks with costly enQueue()
+
+class Queue:
+        def __init__(self):
+                self.s1 = []
+                self.s2 = []
+
+        def enQueue(self, x):
+                
+                # Move all elements from s1 to s2
+                while len(self.s1) != 0:
+                        self.s2.append(self.s1[-1])
+                        self.s1.pop()
+
+                # Push item into self.s1
+                self.s1.append(x)
+
+                # Push everything back to s1
+                while len(self.s2) != 0:
+                        self.s1.append(self.s2[-1])
+                        self.s2.pop()
+
+        # Dequeue an item from the queue
+        def deQueue(self):
+                
+                        # if first stack is empty
+                if len(self.s1) == 0:
+                        print(""Q is Empty"")
+        
+                # Return top of self.s1
+                x = self.s1[-1]
+                self.s1.pop()
+                return x
+
+# Driver code
+if __name__ == '__main__':
+        q = Queue()
+        q.enQueue(1)
+        q.enQueue(2)
+        q.enQueue(3)
+
+        print(q.deQueue())
+        print(q.deQueue())
+        print(q.deQueue())
+
+# This code is contributed by PranchalK
+","1. While stack1 is not empty, push everything from stack1 to stack2.
+2. Push x to stack1 (assuming size of stacks is unlimited).
+3. Push everything back to stack1."
+135,"# Python3 program to implement Queue using
+# two stacks with costly deQueue()
+
+class Queue:
+        def __init__(self):
+                self.s1 = []
+                self.s2 = []
+
+        # EnQueue item to the queue
+        def enQueue(self, x):
+                self.s1.append(x)
+
+        # DeQueue item from the queue
+        def deQueue(self):
+
+                # if both the stacks are empty
+                if len(self.s1) == 0 and len(self.s2) == 0:
+                        print(""Q is Empty"")
+                        return
+
+                # if s2 is empty and s1 has elements
+                elif len(self.s2) == 0 and len(self.s1) > 0:
+                        while len(self.s1):
+                                temp = self.s1.pop()
+                                self.s2.append(temp)
+                        return self.s2.pop()
+
+                else:
+                        return self.s2.pop()
+
+        # Driver code
+if __name__ == '__main__':
+        q = Queue()
+        q.enQueue(1)
+        q.enQueue(2)
+        q.enQueue(3)
+
+        print(q.deQueue())
+        print(q.deQueue())
+        print(q.deQueue())
+
+# This code is contributed by Pratyush Kumar
+","enQueue(q,  x)
+  1) Push x to stack1 (assuming size of stacks is unlimited).
+Here time complexity will be O(1)
+
+deQueue(q)
+  1) If both stacks are empty then error.
+  2) If stack2 is empty
+       While stack1 is not empty, push everything from stack1 to stack2.
+  3) Pop the element from stack2 and return it.
+Here time complexity will be O(n)"
