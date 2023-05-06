@@ -1,4 +1,4 @@
-# Source Code to Algorithm Model 
+# Source Code to Algorithm - LSTM Encoder-Decoder Model
 
 ## Problem Statement
 
@@ -54,6 +54,16 @@ y is one-hot encoded, flattened.
 X and y are split into train and test sets using slicing.  
 Arrays are converted to dense and reshaped into a 3D array with third dimension 1 for compatibility with LSTM architecture.
 5. **Creating Encoder-Decoder Model** -
+Steps to define an Encoder-Decoder LSTM neural network model using Keras:
+
+- Define the input layer with shape (Xtrain.shape[1], Xtrain.shape[2])
+- Define the encoder layer with 128 neurons using LSTM
+- Define the decoder layer using RepeatVector and another LSTM layer with 128 neurons
+- Define the output layer with Dense and Xtrain.shape[2] neurons, using softmax activation
+- Use Model to define the overall model with inputs and outputs
+- Compile the model with Adam optimizer and mean squared error loss
+- The number of neurons in LSTM layers is a hyperparameter that needs to be tuned based on the problem, input data, and desired performance. In this context, the selection of 128 neurons and other relevant parameters was based on a rigorous process of experimentation and trial and error.
+
 6. **Train and fit the model** -
 7. **Test and Evaluate the model** - 
 8. **Validation** - 
