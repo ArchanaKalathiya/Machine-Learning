@@ -2872,7 +2872,8 @@ if __name__ == ""__main__"":
 	# Function call
 	print(""Prefix : "", postToPre(post_exp))
 
-# This code is contributed by AnkitRai01","1. Read the Postfix expression from left to right
+# This code is contributed by AnkitRai01
+","1. Read the Postfix expression from left to right
 2. If the symbol is an operand, then push it onto the Stack
      a. If the symbol is an operator, then pop two operands from the Stack 
      b. Create a string by concatenating the two operands and the operator before them. 
@@ -4065,3 +4066,4 @@ deQueue(q)
        While stack1 is not empty, push everything from stack1 to stack2.
   3) Pop the element from stack2 and return it.
 Here time complexity will be O(n)"
+
