@@ -47,6 +47,12 @@ I have included only Python code in the dataset to simplify the conversion proce
 2. **Load and Summarize dataset** - Load dataset from the directory & summarize the details such as no. of rows and columns & content  
 3. **One-Hot Encoding** - OneHotEncoder from sklearn.preprocessing is used to convert Python code strings to numerical representation using one-hot encoding. We fit and transform the data using fit and transform methods, respectively. The resulting sparse matrix is assigned to a new DataFrame called df.
 4. **Splitting dataset to train and Test** - 
+Train set size = 80% of df rows, stored in train_size.  
+X: all columns of df except last,  
+y: last column of df.  
+y is one-hot encoded, flattened.  
+X and y are split into train and test sets using slicing.  
+Arrays are converted to dense and reshaped into a 3D array with third dimension 1 for compatibility with LSTM architecture.
 5. **Creating Encoder-Decoder Model** -
 6. **Train and fit the model** -
 7. **Test and Evaluate the model** - 
