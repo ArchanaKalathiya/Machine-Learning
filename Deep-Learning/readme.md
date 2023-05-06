@@ -36,9 +36,6 @@ pip install scikit-learn
 ```
 pip install keras
 ```
-```
-pip install tensorflow
-```
 
 ## Approach
 
