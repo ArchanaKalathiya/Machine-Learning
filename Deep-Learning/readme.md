@@ -66,5 +66,5 @@ Steps to define an Encoder-Decoder LSTM neural network model using Keras:
 8. **Validation** - I have created a plot comparing the original and predicted values for a time series. Blue represents original values and red represents predicted values. The plot has a title, x-axis and y-axis labels, and a legend to differentiate between the lines. This plot can be used to visually assess the model's performance in predicting time series values.
 
  <p align="center">
-        <img src="image.png" height="220" width="400"></p>
+        <img src="image.png" height="250" width="400"></p>
 
