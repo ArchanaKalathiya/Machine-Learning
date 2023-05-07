@@ -61,6 +61,10 @@ Steps to define an Encoder-Decoder LSTM neural network model using Keras:
 - Compile the model with Adam optimizer and mean squared error loss
 - The number of neurons in LSTM layers is a hyperparameter that needs to be tuned based on the problem, input data, and desired performance. In this context, the selection of 128 neurons and other relevant parameters was based on a rigorous process of experimentation and trial and error.
 
-6. **Train and fit the model** -
-7. **Test and Evaluate the model** - 
-8. **Validation** - 
+6. **Train and fit the model** - I have trained an Encoder-Decoder LSTM model using X_train. The model is trained for 90 iterations over the entire training set, with a batch size of 28. The validation set is X_test, and the model is evaluated on this set at the end of each epoch. The training history is stored in the history variable.
+7. **Test and Evaluate the model** - The code has been evaluated the trained Encoder-Decoder LSTM model on the testing set. Predictions are made using the predict method, and performance metrics such as loss, accuracy, and F1 score are computed using scikit-learn functions. The accuracy score is high at 96.3%, but the F1 score is moderate at 0.49, indicating that the model may perform well for some classes but not for others. 
+8. **Validation** - I have created a plot comparing the original and predicted values for a time series. Blue represents original values and red represents predicted values. The plot has a title, x-axis and y-axis labels, and a legend to differentiate between the lines. This plot can be used to visually assess the model's performance in predicting time series values.
+
+ <p align="center">
+        <img src="image.png" height="220" width="400"></p>
+
