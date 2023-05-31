@@ -60,5 +60,10 @@ print(iris.tail(10))
 print(iris.shape)
 print(iris.describe())
 print(iris.iloc[4:10,0:2])
-
-
+print(iris.loc[10:50,("sepalwidth","petalwidth")])
+print(iris.drop("class",axis=1))    # Column Drop 
+print(iris.drop([2,5,7],axis=0))    # Row drop
+print(iris.mean())                  # Mean Function
+print(iris.median())                # Median Function
+print(iris.max())                   # Maximum Function
+print(iris.min())                   # Minimum Function
